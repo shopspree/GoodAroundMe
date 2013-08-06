@@ -1,0 +1,9 @@
+# config/settings.yml
+
+# context
+context.global.name: 'GLOBAL'
+context.global: false
+
+# follow
+follow.default.organization: true
+follow.default.team: false

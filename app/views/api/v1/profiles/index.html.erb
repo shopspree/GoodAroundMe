@@ -1,0 +1,21 @@
+<h1>Listing api_v1_profiles</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @api_v1_profiles.each do |api_v1_profile| %>
+  <tr>
+    <td><%= link_to 'Show', api_v1_profile %></td>
+    <td><%= link_to 'Edit', edit_api_v1_profile_path(api_v1_profile) %></td>
+    <td><%= link_to 'Destroy', api_v1_profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Profile', new_api_v1_profile_path %>

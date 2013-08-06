@@ -1,0 +1,21 @@
+<h1>Listing api_v1_likes</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @api_v1_likes.each do |api_v1_like| %>
+  <tr>
+    <td><%= link_to 'Show', api_v1_like %></td>
+    <td><%= link_to 'Edit', edit_api_v1_like_path(api_v1_like) %></td>
+    <td><%= link_to 'Destroy', api_v1_like, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Like', new_api_v1_like_path %>
