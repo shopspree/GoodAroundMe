@@ -9,7 +9,7 @@ class Api::V1::SessionsController < Devise::SessionsController
     return invalid_login_attempt unless @user
 
     if @user.nil?
-      render json: {success: false, message: "Error with your login or password"}, status: 401
+      render json: {success: false, errors: "Error with your login or password"}, status: 401
     end
 
     if @user.valid_password?(params[:user_login][:password])
@@ -18,7 +18,7 @@ class Api::V1::SessionsController < Devise::SessionsController
 
       render json: @user, only: [:email, :authentication_token, :current_sign_in_ip], status: :ok
     else
-      render json: {success: false, message: "Error with your login or password"}, status: 401
+      render json: {success: false, errors: "Error with your login or password"}, status: 401
     end
   end
 
@@ -27,18 +27,18 @@ class Api::V1::SessionsController < Devise::SessionsController
     resource.authentication_token = nil
     resource.save
     sign_out(resource_name)
-    render json: {success: true, message: "sign out successfuly completed"}.to_json, status: :ok
+    render json: {success: true, errors: "sign out successfuly completed"}.to_json, status: :ok
   end
 
   protected
   def ensure_params_exist
     return unless params[:user_login].blank?
-    render json:{success: false, message: "missing user_login parameter"}, status: 422
+    render json:{success: false, errors: "missing user_login parameter"}, status: 422
   end
 
   def invalid_login_attempt
     warden.custom_failure!
-    render json: {success: false, message: "Error with your login or password"}, status: 401
+    render json: {success: false, errors: "Error with your login or password"}, status: 401
   end
 
   def verified_request?

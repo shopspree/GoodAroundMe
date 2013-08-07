@@ -11,7 +11,7 @@
 
 # Context:
 # Global, [dynamic]
-Context.create(name: Settings['context.global'])
+Context.create(name: Settings['context.global.name'])
 
 # OrganizationCategory:
 # Project, Product, Offsite

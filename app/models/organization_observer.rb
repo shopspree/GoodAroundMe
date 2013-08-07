@@ -1,6 +1,6 @@
 class OrganizationObserver < ActiveRecord::Observer
 
-  def before_create(organization)
+  def after_create(organization)
     create_actor(organization)
   end
 

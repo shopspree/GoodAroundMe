@@ -9,8 +9,7 @@ class Actor < ActiveRecord::Base
   belongs_to :actorable, polymorphic: true
   belongs_to :context
 
-  attr_accessible :actorable_id, :actorable_type, :notifications_count
-  attr_readonly :context_id
+  attr_accessible :context_id, :actorable_id, :actorable_type, :notifications_count
 
   validates :actorable_id, presence: true
   validates :actorable_type, presence: true

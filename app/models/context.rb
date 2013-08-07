@@ -1,9 +1,7 @@
 class Context < ActiveRecord::Base
 
   has_many :people
-  has_many :groups
-  has_many :subcategories
-  has_many :hashtags
+  has_many :organizations
 
   attr_accessible :name
 

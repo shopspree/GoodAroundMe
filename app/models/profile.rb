@@ -2,9 +2,9 @@ class Profile < ActiveRecord::Base
   belongs_to :person
   belongs_to :address
 
-  attr_accessible :actor_id, :address_id, :birthday, :first_name, :gender, :last_name, :middle_name, :name_prefix, :name_suffix, :email, :picture_url, :thumbnail_url, :full_name
+  attr_accessible :person_id, :address_id, :birthday, :first_name, :gender, :last_name, :middle_name, :name_prefix, :name_suffix, :email, :picture_url, :thumbnail_url, :full_name
 
-  validates :actor_id, presence: true
+  validates :person_id, presence: true
   validates :first_name, presence: true
 
   before_save :populate_full_name

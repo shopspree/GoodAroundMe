@@ -2,7 +2,7 @@
 
 # context
 context.global.name: 'GLOBAL'
-context.global: false
+context.global: true
 
 # follow
 follow.default.organization: true
