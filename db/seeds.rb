@@ -23,7 +23,7 @@ OrganizationCategory.create(name: 'Environment')
 # Organization, Team
 GroupType.create(name: 'Organization')
 
-# Organization & Domain
+# Domain
 # whitelist
 
 # blacklist

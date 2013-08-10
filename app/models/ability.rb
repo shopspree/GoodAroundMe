@@ -75,7 +75,7 @@ class Ability
       can [:update_password], User
 
       #Organization
-      can [:read, :follow],   Organization
+      can [:read, :follow, :unfollow],   Organization
 
       #OrganizationCategory
       can [:read],   OrganizationCategory

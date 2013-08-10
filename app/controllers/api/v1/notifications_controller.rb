@@ -1,4 +1,4 @@
-class Api::V1::NotificationsController < ApplicationController
+class Api::V1::NotificationsController < Api::V1::BaseController
 
   # GET /api/v1/notifications/:email.json
   def index

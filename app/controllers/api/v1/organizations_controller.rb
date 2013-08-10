@@ -50,28 +50,28 @@ class Api::V1::OrganizationsController < Api::V1::BaseController
 
   # POST /api/v1/organizations/1/follow.json
   def follow
-    @organization = Organization.find(params[:id])
+    @organization = Organization.find(params[:organization_id])
     @person = current_person
 
-    unless @person.follows.include? @organization
-      @person.follows << @organization
+    unless @person.following.include? @organization
+      @person.following << @organization
       @person.save
     else
-      respond_with @person.errors, status: :unprocessable_entity
+      render json: {success: false, errors: "Already following #{@organization.name}"}, status: :unprocessable_entity
     end
 
   end
 
   # DELETE /api/v1/organizations/1/follow.json
   def unfollow
-    @organization = Organization.find(params[:id])
+    @organization = Organization.find(params[:organization_id])
     @person = current_person
 
-    if @person.follows.include? @organization
-      @person.follows.delete(@organization)
+    if @person.following.include? @organization
+      @person.following.delete(@organization)
       @person.save
     else
-      respond_with @person.errors, status: :unprocessable_entity
+      render json: {success: false, errors: "Not following #{@organization.name} from first place"}, status: :unprocessable_entity
     end
 
   end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130807003433) do
+ActiveRecord::Schema.define(:version => 20130810125632) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -96,12 +96,11 @@ ActiveRecord::Schema.define(:version => 20130807003433) do
     t.integer  "organization_id"
   end
 
-  create_table "followers", :force => true do |t|
-    t.boolean  "approved"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+  create_table "follows", :force => true do |t|
     t.integer  "person_id"
     t.integer  "organization_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "group_types", :force => true do |t|
@@ -196,6 +195,7 @@ ActiveRecord::Schema.define(:version => 20130807003433) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "image_url"
   end
 
   create_table "organization_organization_categories", :force => true do |t|
@@ -207,21 +207,23 @@ ActiveRecord::Schema.define(:version => 20130807003433) do
 
   create_table "organizations", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at",                     :null => false
-    t.datetime "updated_at",                     :null => false
-    t.string   "description"
-    t.string   "website_url"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
     t.integer  "context_id"
-    t.integer  "followers_count", :default => 0
+    t.integer  "posts_count",         :default => 0
+    t.string   "image_thumbnail_url"
+    t.string   "about"
+    t.string   "website_url"
+    t.integer  "followers_count",     :default => 0
   end
 
   create_table "people", :force => true do |t|
-    t.datetime "created_at",                     :null => false
-    t.datetime "updated_at",                     :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
     t.integer  "context_id"
     t.integer  "organization_id"
-    t.integer  "follows_count",   :default => 0
     t.integer  "user_id"
+    t.integer  "followings_count", :default => 0
   end
 
   create_table "post_subcategories", :force => true do |t|

@@ -16,7 +16,7 @@ class Api::V1::SessionsController < Devise::SessionsController
       sign_in(:user, @user)
       @user.reset_authentication_token!
 
-      render json: @user, only: [:email, :authentication_token, :current_sign_in_ip], status: :ok
+      #render json: @user, only: [:email, :authentication_token, :current_sign_in_ip], status: :ok
     else
       render json: {success: false, errors: "Error with your login or password"}, status: 401
     end

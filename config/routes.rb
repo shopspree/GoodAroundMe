@@ -11,18 +11,13 @@ Goodaroundme::Application.routes.draw do
     # /api/v1/*
     namespace :v1 do
 
+      # /organization_categories/
+      resources :organization_categories, only: [:index]
+
       # /organizations
       resources :organizations, only: [:index, :show, :create, :update, :destroy] do
         post 'follow'
         delete 'unfollow'
-      end
-
-      # /organization_categories/
-      resources :organizations_categories, only: [:index] do
-
-        # /organization_categories/:organization_category/organizations
-        resources :organizations, only: [:index, :show, :create, :update, :destroy]
-
       end
 
       # /profiles
