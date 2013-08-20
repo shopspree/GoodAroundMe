@@ -46,3 +46,6 @@ gem 'jbuilder'
 gem 'devise' # to authenticate and register users
 gem 'cancan' # to authorize users actions
 gem 'kaminari' # to use paging
+
+# NewRelic monitoring
+gem 'newrelic_rpm'
