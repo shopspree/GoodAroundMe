@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/registrations/create.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/users/show.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/users/update.json.jbuilder" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/api/v1/profiles/show.json.jbuilder" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130803130330_add_actor_id_to_activity.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130803144339_remove_actor_id_from_activity.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/api/v1/profiles/update.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/users/following.json.jbuilder" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/api/v1/regsitrations/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/api/v1/registrations/_form.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/api/v1/regsitrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/api/v1/registrations/edit.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/api/v1/regsitrations/index.html.erb" afterPath="$PROJECT_DIR$/app/views/api/v1/registrations/index.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/api/v1/regsitrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/api/v1/registrations/new.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/api/v1/regsitrations/show.html.erb" afterPath="$PROJECT_DIR$/app/views/api/v1/registrations/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/organization_categories/_organization_category.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/organization_categories/_organization_category.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity.rb" afterPath="$PROJECT_DIR$/app/models/activity.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity_inspector_observer.rb" afterPath="$PROJECT_DIR$/app/models/activity_inspector_observer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/actor.rb" afterPath="$PROJECT_DIR$/app/models/actor.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/sessions/create.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/sessions/create.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/organization.rb" afterPath="$PROJECT_DIR$/app/models/organization.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/person.rb" afterPath="$PROJECT_DIR$/app/models/person.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/person_observer.rb" afterPath="$PROJECT_DIR$/app/models/person_observer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/profile.rb" afterPath="$PROJECT_DIR$/app/models/profile.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/profiles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/profiles_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/registrations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/registrations_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="" />
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375823887270" ignored="false" />
@@ -313,6 +277,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goodaroundme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goodaroundme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -883,13 +865,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1420" height="798" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38136828" sideWeight="0.6005706" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38136828" sideWeight="0.6005706" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39942938" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
