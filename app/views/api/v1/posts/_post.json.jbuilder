@@ -1,5 +1,9 @@
 json.post do |json|
-  json.(post, :id, :content, :created_at, :updated_at, :comments_count, :likes_count)
+  json.(post, :id, :title, :caption, :created_at, :updated_at, :comments_count, :likes_count)
+
+  json.contributor do |json|
+    json.partial! post.contributor.person.user
+  end
 
   json.liked_by_user liked_by_user? post, current_user
 
@@ -11,12 +15,5 @@ json.post do |json|
     json.updated_at media.updated_at
   end
 
-  json.hashtags post.hashtags do |hashtag|
-    json.partial! hashtag
-  end
-
-
-  json.user do |json|
-    json.partial! post.actor.profile
-  end
+  json.partial! post.actor.actorable
 end

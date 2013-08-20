@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  has_one :person
+  has_one :person, dependent: :destroy
 
   # Include default devise modules. Others available are:
   # :lockable, :rememberable, :timeoutable, :confirmable, and :omniauthable

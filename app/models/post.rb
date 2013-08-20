@@ -16,7 +16,7 @@ class Post < ActiveRecord::Base
   belongs_to :actor
   belongs_to :contributor, class_name: "Actor"
 
-  attr_accessible :actor_id, :contributor_id, :comments_count, :likes_count, :content, :inappropriate_reports_count, :post_subcategories_count
+  attr_accessible :actor_id, :contributor_id, :comments_count, :likes_count, :title, :caption, :inappropriate_reports_count, :post_subcategories_count
 
   scope :popular, lambda { where("created_at > ?", 60.days.ago) }
 

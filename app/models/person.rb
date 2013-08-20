@@ -2,9 +2,9 @@ class Person < ActiveRecord::Base
 
   has_many :follows, dependent: :destroy
   has_many :following, through: :follows, source: :organization
-  has_many :notifications
-  has_one :profile
-  has_one :actor, as: :actorable
+  has_many :notifications, dependent: :destroy
+  has_one :profile, dependent: :destroy
+  has_one :actor, as: :actorable, dependent: :destroy
 
   belongs_to :context
   belongs_to :organization

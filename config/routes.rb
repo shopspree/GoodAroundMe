@@ -3,13 +3,14 @@ Goodaroundme::Application.routes.draw do
   # devise
   devise_for :users, controllers: { sessions: "api/v1/sessions", registrations: "api/v1/registrations" }
 
-  put 'users/update_password', to: 'api/v1/users#update_password'
-
   # /api/*
   namespace :api do
 
     # /api/v1/*
     namespace :v1 do
+
+      # /activities
+      resources :activities, only: [:index, :show]
 
       # /organization_categories/
       resources :organization_categories, only: [:index]
@@ -18,15 +19,15 @@ Goodaroundme::Application.routes.draw do
       resources :organizations, only: [:index, :show, :create, :update, :destroy] do
         post 'follow'
         delete 'unfollow'
+
+        # /organizations/:organization_id/activities
+        resources :activities, only: [:index]
       end
 
-      # /profiles
-      # /profiles/email/:email
-      get 'profiles/email/:email', to: 'profiles#show', constraints: { email: /.*?(?=\.json)/ }
-      put 'profiles/email/:email', to: 'profiles#update', constraints: { email: /.*?(?=\.json)/ }
-
-      # /profiles/search/:keyword.json
-      get 'profiles/search/:keyword', to: 'profiles#search'
+      # /users/:email
+      put 'users/:email/update_password', to: 'users#update_password', constraints: { email: /[^\/]+/ }
+      get 'users/:email', to: 'users#show', constraints: { email: /.*(?=\.json)/ }
+      put 'users/:email', to: 'users#update', constraints: { email: /.*(?=\.json)/ }
 
       # /posts
       resources :posts, only: [:show, :create, :update, :destroy] do
@@ -64,26 +65,6 @@ Goodaroundme::Application.routes.draw do
 
       end
 
-      # /hashtags
-      match '/hashtags/popular' => 'hashtags#popular' # /hashtags/popular
-      match '/hashtags/suggest/:prefix' => 'hashtags#suggest' # /hashtags/suggest/:prefix
-      resources :hashtags, only: [:index, :show, :create]
-
-
-      # /activities
-      resources :activities, only: [:index, :show]
-
-      # /categories/:id/subcategories
-      resources :categories, only: [:index]  do
-        resources :subcategories, only: [:index, :create]
-      end
-
-      # /subcategories
-      resources :subcategories, only: [:index]
-
-      # /notifications/:email
-      get 'notifications/:email', to: 'notifications#index', constraints: { email: /.*?(?=\.json)/ }
-      put 'notifications/:email', to: 'notifications#acknowledge', constraints: { email: /.*?(?=\.json)/ }
     end
   end
 

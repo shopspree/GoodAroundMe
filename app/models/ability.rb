@@ -61,18 +61,12 @@ class Ability
       # Inappropriate
       can :create,  InappropriateReport # anyone can report inappropriate
 
-      # Hashtag
-      can [:read, :create],  Hashtag # anyone can read or create hashtag
-
-      # Profile
-      can [:read, :search], Profile # anyone can read or search a profile
-      can :update,          Profile, person_id: person.id       # can update self profile
-
       # Notification
       can [:read, :acknowledge],  Notification, actor_id: actor.id # can read self profile notification
 
       # User
-      can [:update_password], User
+      can [:read, :following], User
+      can [:update, :update_password], User, id: user.id
 
       #Organization
       can [:read, :follow, :unfollow],   Organization

@@ -2,14 +2,7 @@ class Api::V1::ProfilesController < Api::V1::BaseController
 
   # GET /api/v1/profiles/email/john.doe@email.com.json
   def show
-    user = user_by_email(params[:email])
-
-    if user
-      @profile = user.actor.profile
-      @job_profile = user.actor.job_profile
-      @groups = user.actor.groups
-    end
-
+    @user = user_by_email(params[:email])
   end
 
   # PUT /api/v1/profiles/email/john.doe@email.com.json

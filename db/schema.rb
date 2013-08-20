@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130810125632) do
+ActiveRecord::Schema.define(:version => 20130819145729) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20130810125632) do
     t.datetime "updated_at",        :null => false
     t.integer  "timelineable_id"
     t.string   "timelineable_type"
+    t.integer  "actor_id"
   end
 
   create_table "actors", :force => true do |t|
@@ -215,6 +216,7 @@ ActiveRecord::Schema.define(:version => 20130810125632) do
     t.string   "about"
     t.string   "website_url"
     t.integer  "followers_count",     :default => 0
+    t.string   "location"
   end
 
   create_table "people", :force => true do |t|
@@ -234,7 +236,7 @@ ActiveRecord::Schema.define(:version => 20130810125632) do
   end
 
   create_table "posts", :force => true do |t|
-    t.string   "content"
+    t.string   "caption"
     t.integer  "actor_id"
     t.datetime "created_at",                                 :null => false
     t.datetime "updated_at",                                 :null => false
@@ -243,6 +245,7 @@ ActiveRecord::Schema.define(:version => 20130810125632) do
     t.integer  "inappropriate_reports_count", :default => 0
     t.integer  "subcategories_count"
     t.integer  "contributor_id"
+    t.string   "title"
   end
 
   create_table "profiles", :force => true do |t|
@@ -261,6 +264,7 @@ ActiveRecord::Schema.define(:version => 20130810125632) do
     t.string   "picture_url"
     t.string   "full_name"
     t.integer  "person_id"
+    t.string   "about"
   end
 
   create_table "subcategories", :force => true do |t|

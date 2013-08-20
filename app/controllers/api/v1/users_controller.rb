@@ -1,6 +1,23 @@
 class Api::V1::UsersController < Api::V1::BaseController
+
+
   def edit
     @user = current_user
+  end
+
+  # GET /api/v1/usersjohn.doe@email.com.json
+  def show
+    @user = user_by_email(params[:email])
+  end
+
+  # PUT /api/v1/users/john.doe@email.com.json
+  def update
+    user = user_by_email(params[:email])
+
+    user.person.profile.update_attributes(params[:profile])
+
+    render json: user.errors, status: :unprocessable_entity unless user.save
+
   end
 
   def update_password
@@ -15,9 +32,20 @@ class Api::V1::UsersController < Api::V1::BaseController
     end
   end
 
-
-
   def user_params
     params.required(:user).permit(:current_password, :password, :password_confirmation)
   end
+
+
+  protected
+
+  def user_by_email(email)
+    user = if current_user && current_user.email  == email
+             current_user
+           else
+             User.find_by_email(email)
+           end
+  end
+
+
 end

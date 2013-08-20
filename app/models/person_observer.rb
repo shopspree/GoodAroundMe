@@ -19,11 +19,6 @@ class PersonObserver < ActiveRecord::Observer
     person.create_profile(email: email) unless person.profile
   end
 
-  def create_job_profile(person)
-    email = user_email(person)
-    person.create_job_profile(email: email) unless person.job_profile
-  end
-
   def default_follow(person)
     email = user_email(person)
     domain_name = email.split("@").last
