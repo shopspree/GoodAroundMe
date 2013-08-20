@@ -8,7 +8,7 @@ class Api::V1::ActivitiesController < Api::V1::BaseController
   def index
     @activities = if params[:post_id]
                     [Post.find(params[:post_id]).activity]
-                  else if params[:organizations_id]
+                  elsif params[:organizations_id]
                     [Organization.find(params[:organizations_id]).actor.activities]
                   else
                     page = params[:activity] ? params[:activity][:page] : 1
