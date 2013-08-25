@@ -3,7 +3,7 @@ class PersonObserver < ActiveRecord::Observer
   def after_create(person)
     create_actor(person)
     create_profile(person)
-
+    assign_organization(person)
     default_follow(person)
   end
 
@@ -19,12 +19,15 @@ class PersonObserver < ActiveRecord::Observer
     person.create_profile(email: email) unless person.profile
   end
 
-  def default_follow(person)
+  def assign_organization(person)
     email = user_email(person)
-    domain_name = email.split("@").last
-    domain = Domain.find_by_name(domain_name)
+    org_operator = Operator.find_by_email(email)
+    organization = org_operator.organziation if org_operator
+    person.organization = organization
+  end
 
-    organization = domain.organization if domain
+  def default_follow(person)
+    organization = person.organization
     person.follows <<  organization if organization
   end
 

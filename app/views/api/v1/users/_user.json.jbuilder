@@ -9,4 +9,6 @@ json.user do |json|
       end
     end
   end
+
+  json.partial! user.person.organization
 end
