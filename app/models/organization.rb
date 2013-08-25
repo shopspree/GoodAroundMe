@@ -21,7 +21,7 @@ class Organization < ActiveRecord::Base
   protected
 
   def default_values
-    assign_attibutes(context_id: Context.find_by_name(Settings['context.global.name']).id) unless context_id
+    assign_attributes(context_id: Context.find_by_name(Settings['context.global.name']).id) unless context_id
   end
 
 end
