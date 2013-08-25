@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/person_observer.rb" afterPath="$PROJECT_DIR$/app/models/person_observer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +25,7 @@
     <file path="/index.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376066212853" ignored="false" />
     <file path="/routes.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376849755533" ignored="false" />
     <file path="/create.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376556148300" ignored="false" />
-    <file path="/_user.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377438511595" ignored="false" />
+    <file path="/_user.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377441745271" ignored="false" />
     <file path="/_organization_category.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376776007986" ignored="false" />
     <file path="/organization_organization_category.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376121366927" ignored="false" />
     <file path="/_organization.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376924266169" ignored="false" />
@@ -119,19 +116,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="person_observer.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="person_observer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/person_observer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="60" selection-start="598" selection-end="598" vertical-scroll-proportion="0.4755043">
+            <state line="24" column="60" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_user.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_user.json.jbuilder" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0">
+            <state line="12" column="44" selection-start="395" selection-end="395" vertical-scroll-proportion="0.53892213">
               <folding />
             </state>
           </provider>
@@ -196,8 +193,8 @@
         <option value="$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/models/operator.rb" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/models/person_observer.rb" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder" />
       </list>
     </option>
   </component>
@@ -1067,13 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="119" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
@@ -1083,7 +1073,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/person_observer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="60" selection-start="598" selection-end="598" vertical-scroll-proportion="0.4755043">
+        <state line="24" column="60" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="44" selection-start="395" selection-end="395" vertical-scroll-proportion="0.53892213">
           <folding />
         </state>
       </provider>

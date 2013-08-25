@@ -10,5 +10,5 @@ json.user do |json|
     end
   end
 
-  json.partial! user.person.organization
+  json.partial! user.person.organization if user.person.organization
 end
