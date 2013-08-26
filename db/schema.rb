@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130826081908) do
+ActiveRecord::Schema.define(:version => 20130826094111) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -193,11 +193,11 @@ ActiveRecord::Schema.define(:version => 20130826081908) do
   end
 
   create_table "operators", :force => true do |t|
-    t.string   "organization_id"
     t.string   "email"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
     t.integer  "person_id"
+    t.integer  "organization_id"
   end
 
   create_table "organization_categories", :force => true do |t|
