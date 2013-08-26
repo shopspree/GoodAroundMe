@@ -2,7 +2,7 @@ json.post do |json|
   json.(post, :id, :title, :caption, :created_at, :updated_at, :comments_count, :likes_count)
 
   json.contributor do |json|
-    json.partial! post.contributor.person.user
+    json.partial! post.contributor.actorable.user
   end
 
   json.liked_by_user liked_by_user? post, current_user
