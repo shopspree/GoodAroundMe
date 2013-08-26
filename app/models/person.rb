@@ -5,7 +5,7 @@ class Person < ActiveRecord::Base
   has_many :notifications, dependent: :destroy
   has_one :profile, dependent: :destroy
   has_one :actor, as: :actorable, dependent: :destroy
-  has_one :operator
+  has_one :operator, dependent: :destroy
   has_one :organization, through: :operator
 
   belongs_to :context
