@@ -1,7 +1,5 @@
 class Api::V1::PostsController < Api::V1::BaseController
 
-  after_filter :post_audience, only: [:update, :create]
-
   # GET /api/v1/posts/1.json
   def show
     @post = Post.find(params[:id])
