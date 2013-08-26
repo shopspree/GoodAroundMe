@@ -1,7 +1,6 @@
 class Organization < ActiveRecord::Base
-  has_many :people
-  has_many :groups
-  has_many :job_profiles
+  has_many :operators, dependent: :destroy
+  has_many :people, through: :operators
   has_many :domains, dependent: :destroy
   has_many :organization_organization_categories, dependent: :destroy
   has_many :organization_categories, through: :organization_organization_categories

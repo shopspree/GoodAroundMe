@@ -5,12 +5,13 @@ class Person < ActiveRecord::Base
   has_many :notifications, dependent: :destroy
   has_one :profile, dependent: :destroy
   has_one :actor, as: :actorable, dependent: :destroy
+  has_one :operator
+  has_one :organization, through: :operator
 
   belongs_to :context
-  belongs_to :organization
   belongs_to :user
 
-  attr_accessible :organization_id, :context_id, :user_id, :followings_count
+  attr_accessible :context_id, :user_id, :followings_count
 
   validates_presence_of :context_id
 

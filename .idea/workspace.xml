@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/operator.rb" afterPath="$PROJECT_DIR$/app/models/operator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/organization.rb" afterPath="$PROJECT_DIR$/app/models/organization.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/person.rb" afterPath="$PROJECT_DIR$/app/models/person.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -11,11 +15,11 @@
     <file path="/sessions_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376140355970" ignored="false" />
     <file path="/fragment.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376663428505" ignored="false" />
     <file path="/registrations_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376666801302" ignored="false" />
-    <file path="/user.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376487192900" ignored="false" />
+    <file path="/user.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377503019776" ignored="false" />
     <file path="/user_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376486782908" ignored="false" />
     <file path="/settings.yml" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375834024711" ignored="false" />
     <file path="/seeds.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376125026180" ignored="false" />
-    <file path="/person.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376487204383" ignored="false" />
+    <file path="/person.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377504870311" ignored="false" />
     <file path="/application.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375835246290" ignored="false" />
     <file path="/person_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377438895850" ignored="false" />
     <file path="/context.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375835173229" ignored="false" />
@@ -31,7 +35,7 @@
     <file path="/_organization.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377444773979" ignored="false" />
     <file path="/20130810080421_rename_descrption_to_about_in_organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376121881317" ignored="false" />
     <file path="/20130810083308_add_posts_count_to_organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376123695225" ignored="false" />
-    <file path="/organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377443269890" ignored="false" />
+    <file path="/organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377504394048" ignored="false" />
     <file path="/organization_profile.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376124336648" ignored="false" />
     <file path="/20130810090922_remove_organziation_profile.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376125781122" ignored="false" />
     <file path="/follow_organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376129257992" ignored="false" />
@@ -51,7 +55,8 @@
     <file path="/show.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376667747488" ignored="false" />
     <file path="/activities_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377014781377" ignored="false" />
     <file path="/Gemfile" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377013691707" ignored="false" />
-    <file path="/operator.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377437179482" ignored="false" />
+    <file path="/operator.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377507453649" ignored="false" />
+    <file path="/operator_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377503992618" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,15 +76,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="10" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="organization_observer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/organization_observer.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,7 +88,7 @@
       <file leaf-file-name="organization.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/organization.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="21" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
+            <state line="2" column="39" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,25 +97,7 @@
       <file leaf-file-name="person.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/person.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="473" selection-end="483" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_observer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user_observer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="person_observer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/person_observer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="60" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+            <state line="8" column="43" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,10 +112,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_organization.json.jbuilder" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_organization.json.jbuilder" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="25" selection-start="174" selection-end="174" vertical-scroll-proportion="0.084033616">
+            <state line="2" column="25" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="operator.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/operator.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="21" selection-start="328" selection-end="328" vertical-scroll-proportion="0.527027">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="job_profile.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/job_profile.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="20" selection-start="303" selection-end="317" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="2" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,9 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/api/v1/users/following.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/organization_categories/_organization_category.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/models/activity.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -190,11 +192,14 @@
         <option value="$PROJECT_DIR$/config/newrelic.yml" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/app/models/operator.rb" />
         <option value="$PROJECT_DIR$/app/models/person_observer.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/models/organization.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/models/operator_observer.rb" />
+        <option value="$PROJECT_DIR$/app/models/organization.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/person.rb" />
+        <option value="$PROJECT_DIR$/app/models/operator.rb" />
       </list>
     </option>
   </component>
@@ -967,120 +972,118 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="22" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="56" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1377014509000" expanded="true" signature="-1:-1" placeholder="staging:" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/registrations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="276" selection-end="288" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/operator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="26" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user_observer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/person_observer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="60" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/organization.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="21" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/organization_observer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+        <state line="3" column="2" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/person.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="473" selection-end="483" vertical-scroll-proportion="0.0">
+        <state line="8" column="43" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/organization.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="39" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/actor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="42" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder">
+    <entry file="file://$PROJECT_DIR$/app/models/association.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="174" selection-end="174" vertical-scroll-proportion="0.084033616">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/audience.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/context.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/domain.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/group.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/hashtag.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/inappropriate_report.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/job_profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="303" selection-end="317" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/operator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="328" selection-end="328" vertical-scroll-proportion="0.527027">
           <folding />
         </state>
       </provider>
