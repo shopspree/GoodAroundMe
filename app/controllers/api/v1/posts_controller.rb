@@ -14,6 +14,7 @@ class Api::V1::PostsController < Api::V1::BaseController
     if current_person.organization
       @post = current_person.organization.actor.posts.new(params[:post])
       @post.contributor_id = current_actor.id
+      @user = current_user
     end
 
     respond_with @post.errors, status: :unprocessable_entity unless @post.save
