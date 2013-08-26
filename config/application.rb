@@ -30,7 +30,7 @@ module Goodaroundme
 
     # Activate observers that should always be running.
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
-    config.active_record.observers = :user_observer, :person_observer, :organization_observer, :actor_observer, :activity_inspector_observer, :taggable_observer, :notification_inspector_observer
+    config.active_record.observers = :user_observer, :person_observer, :organization_observer, :actor_observer, :activity_inspector_observer, :notification_inspector_observer
 
         # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
