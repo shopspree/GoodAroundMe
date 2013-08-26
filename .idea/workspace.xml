@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/media.rb" afterPath="$PROJECT_DIR$/app/models/media.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +21,7 @@
     <file path="/context.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375835173229" ignored="false" />
     <file path="/profile.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375835609285" ignored="false" />
     <file path="/organization_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375836612437" ignored="false" />
-    <file path="/organization_categories_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376128413082" ignored="false" />
+    <file path="/organization_categories_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377538834483" ignored="false" />
     <file path="/index.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376066212853" ignored="false" />
     <file path="/routes.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376849755533" ignored="false" />
     <file path="/create.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376556148300" ignored="false" />
@@ -82,16 +79,43 @@
       <file leaf-file-name="_organization.json.jbuilder" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="24" selection-start="168" selection-end="173" vertical-scroll-proportion="0.0">
+            <state line="2" column="27" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_organization_category.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/organization_categories/_organization_category.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.33333334">
+            <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="organization_categories_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="24" selection-start="212" selection-end="212" vertical-scroll-proportion="0.23148148">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="organizations_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,28 +148,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="media.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/media.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="73" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="113" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/models/person_observer.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" />
@@ -185,6 +190,7 @@
         <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/app/models/media.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb" />
       </list>
     </option>
   </component>
@@ -462,6 +468,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="organization_categories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goodaroundme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goodaroundme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="comments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -493,24 +529,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="activities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goodaroundme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goodaroundme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -956,55 +974,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/activesupport-3.2.13/lib/active_support/hash_with_indifferent_access.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.13/lib/active_record/associations/collection_proxy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/actor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_controller/metal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="4448" selection-end="4448" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="39" selection-start="1692" selection-end="1692" vertical-scroll-proportion="0.4763158">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/taggable_observer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.3816794">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1063,7 +1032,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.33333334">
+        <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/organization_categories/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/follow.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/show.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/organization_categories/_organization_category.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="24" selection-start="212" selection-end="212" vertical-scroll-proportion="0.23148148">
           <folding />
         </state>
       </provider>
