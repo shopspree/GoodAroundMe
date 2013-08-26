@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity.rb" afterPath="$PROJECT_DIR$/app/models/activity.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,10 +103,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="organization_categories_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="organization_categories_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="24" selection-start="212" selection-end="212" vertical-scroll-proportion="0.23148148">
+            <state line="5" column="24" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activities_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="37" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="25" selection-start="343" selection-end="359" vertical-scroll-proportion="0.3314121">
               <folding />
             </state>
           </provider>
@@ -148,15 +166,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/media.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="73" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -175,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/person_observer.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/users/_user.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/models/operator_observer.rb" />
@@ -191,6 +199,7 @@
         <option value="$PROJECT_DIR$/app/models/media.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/activity.rb" />
       </list>
     </option>
   </component>
@@ -974,20 +983,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="113" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/media.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="73" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
@@ -1081,7 +1076,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="212" selection-end="212" vertical-scroll-proportion="0.23148148">
+        <state line="5" column="24" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="37" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="343" selection-end="359" vertical-scroll-proportion="0.3314121">
           <folding />
         </state>
       </provider>

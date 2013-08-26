@@ -12,7 +12,7 @@ class Activity < ActiveRecord::Base
 
   scope :from_followed_by, lambda { |person|
     where("timelineable_type = 'Post' AND actor_id IN
-      (SELECT actorable_id FROM actors WHERE actorable_type='Organization' AND actorable_id IN
+      (SELECT id FROM actors WHERE actorable_type='Organization' AND actorable_id IN
         (SELECT organization_id FROM follows WHERE person_id = :person_id))",  person_id: person.id)
   }
 
