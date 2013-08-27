@@ -14,6 +14,7 @@ class Api::V1::ActivitiesController < Api::V1::BaseController
                     page = params[:activity] ? params[:activity][:page] : 1
                     Activity.from_followed_by(current_person).page(page) if current_person
                   end
+    @user = current_user
   end
 
 
