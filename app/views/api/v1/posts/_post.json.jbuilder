@@ -5,11 +5,11 @@ json.post do |json|
     json.partial! post.contributor.actorable.user
   end
 
-  json.liked_by_user liked_by_user? post, current_user
+  json.liked_by_user liked_by_user? post, @user
 
   json.medias post.medias do |media|
     json.id media.id
-    json.url media.url_string
+    json.url_string media.url_string
     json.type media.media_type.name
     json.created_at media.created_at
     json.updated_at media.updated_at
