@@ -1,5 +1,7 @@
 class Api::V1::LikesController < Api::V1::BaseController
 
+  before_filter :set_user
+
   # GET /api/v1/posts/1/likes.json
   # GET /api/v1/comments/1/likes.json
   def index
@@ -67,5 +69,12 @@ class Api::V1::LikesController < Api::V1::BaseController
     like.destroy
 
     render { head :no_content, status: :no_content, location: nil }
+  end
+
+
+  protected
+
+  def set_user
+    @user = current_user
   end
 end

@@ -5,7 +5,7 @@ json.post do |json|
     json.partial! post.contributor.actorable.user
   end
 
-  json.liked_by_user liked_by_user?(post, @user).to_s
+  json.liked_by_user liked_by_user?(post, current_user).to_s
 
   json.medias post.medias do |media|
     json.id media.id

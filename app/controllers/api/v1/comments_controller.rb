@@ -1,5 +1,7 @@
 class Api::V1::CommentsController < Api::V1::BaseController
 
+  before_filter :set_user
+
   # GET /api/v1/posts/1/comments.json
   def index
     @post = Post.find(params[:post_id])
@@ -45,4 +47,12 @@ class Api::V1::CommentsController < Api::V1::BaseController
     @comment = @commentable.comments.find(params[:id])
     @comment.destroy
   end
+
+
+  protected
+
+  def set_user
+    @user = current_user
+  end
+
 end
