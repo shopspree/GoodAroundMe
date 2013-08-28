@@ -55,7 +55,7 @@ class Ability
 
 
       # Like
-      can [:read, :create] # anyone can like
+      can [:read, :create], Like # anyone can like
       can :destroy, Like, actor_id: actor.id  # can destroy like they own
 
       # Inappropriate
