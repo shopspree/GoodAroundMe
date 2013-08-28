@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,6 +59,8 @@
     <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377518953451" ignored="false" />
     <file path="/media.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377535479613" ignored="false" />
     <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377594415904" ignored="false" />
+    <file path="/_comment.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377681606391" ignored="false" />
+    <file path="/_like.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377681596898" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activities_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="activities_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="596" selection-end="596" vertical-scroll-proportion="0.36486486">
+            <state line="14" column="29" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,6 +120,24 @@
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="53" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_comment.json.jbuilder" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="41" selection-start="260" selection-end="260" vertical-scroll-proportion="0.2027027">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_like.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="43" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,8 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/operator_observer.rb" />
-        <option value="$PROJECT_DIR$/app/models/organization.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/operator.rb" />
         <option value="$PROJECT_DIR$/app/models/person.rb" />
@@ -175,6 +193,8 @@
         <option value="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" />
       </list>
     </option>
   </component>
@@ -483,6 +503,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="organization_categories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goodaroundme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goodaroundme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="likes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1032,20 +1082,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/association.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/audience.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1130,6 +1166,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="29" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="53" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
@@ -1137,9 +1180,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="596" selection-end="596" vertical-scroll-proportion="0.36486486">
+        <state line="4" column="43" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="41" selection-start="260" selection-end="260" vertical-scroll-proportion="0.2027027">
           <folding />
         </state>
       </provider>
