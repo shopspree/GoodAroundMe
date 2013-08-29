@@ -4,8 +4,6 @@ module Api::V1::LikesHelper
     likeable.likes.each do |like|
       return like if like.actor == user.person.actor
     end
-
-    false
   end
 
 end
