@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +40,7 @@
     <file path="/organizations_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376140493217" ignored="false" />
     <file path="/20130810125632_add_follows_to_organization_and_person.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376139715202" ignored="false" />
     <file path="/ability.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377699652172" ignored="false" />
-    <file path="/_post.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377790080437" ignored="false" />
+    <file path="/_post.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377791418024" ignored="false" />
     <file path="/post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377534987124" ignored="false" />
     <file path="/20130811142107_rename_content_to_caption_in_post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376230923808" ignored="false" />
     <file path="/activity.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376838732947" ignored="false" />
@@ -103,7 +102,16 @@
       <file leaf-file-name="_post.json.jbuilder" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="2" selection-start="203" selection-end="203" vertical-scroll-proportion="0.26717559">
+            <state line="7" column="3" selection-start="204" selection-end="204" vertical-scroll-proportion="0.26717559">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_activity.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1048,13 +1056,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1153,9 +1154,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="2" selection-start="203" selection-end="203" vertical-scroll-proportion="0.26717559">
+        <state line="7" column="3" selection-start="204" selection-end="204" vertical-scroll-proportion="0.26717559">
           <folding />
         </state>
       </provider>
