@@ -29,7 +29,7 @@ class NotificationInspectorObserver < ActiveRecord::Observer
   def comment_notification(comment)
     post = comment.post
     unless comment.actor == post.actor
-      notify_post_actor post, actor
+      notify_post_actor post
 
       comment_actors = Array.new
       post.comments.each do |post_comment|
