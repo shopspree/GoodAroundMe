@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,7 +138,7 @@
       <file leaf-file-name="_comment.json.jbuilder" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="28" selection-start="147" selection-end="159" vertical-scroll-proportion="0.08108108">
+            <state line="3" column="2" selection-start="134" selection-end="134" vertical-scroll-proportion="0.12162162">
               <folding />
             </state>
           </provider>
@@ -1219,7 +1218,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="147" selection-end="159" vertical-scroll-proportion="0.08108108">
+        <state line="3" column="2" selection-start="134" selection-end="134" vertical-scroll-proportion="0.12162162">
           <folding />
         </state>
       </provider>
