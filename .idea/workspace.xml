@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,10 +135,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_comment.json.jbuilder" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_comment.json.jbuilder" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="2" selection-start="134" selection-end="134" vertical-scroll-proportion="0.12162162">
+            <state line="3" column="2" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.json.jbuilder" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -180,7 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/app/models/media.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
@@ -196,6 +204,7 @@
         <option value="$PROJECT_DIR$/app/models/notification_inspector_observer.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder" />
       </list>
     </option>
   </component>
@@ -1111,13 +1120,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="136" selection-end="170" vertical-scroll-proportion="0.15267175">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="5" selection-start="1349" selection-end="1410" vertical-scroll-proportion="0.46310434">
@@ -1218,7 +1220,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="134" selection-end="134" vertical-scroll-proportion="0.12162162">
+        <state line="3" column="2" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
