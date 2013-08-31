@@ -40,7 +40,7 @@ class Api::V1::LikesController < Api::V1::BaseController
     respond_with @like.errors, status: :unprocessable_entity, location: nil unless @like.save
 
     10.times do
-      logger.debug("[DEBUG] <LikesController> Create: Likes count on post #{@like.likeable.likes_count}")
+      logger.debug("[DEBUG] <LikesController> Create: Likes count on post #{ Post.find(params[:post_id]).likes_count}")
     end
 
   end
@@ -72,7 +72,7 @@ class Api::V1::LikesController < Api::V1::BaseController
     @like.destroy
 
     10.times do
-      logger.debug("[DEBUG] <LikesController> destroy: Likes count on post #{@like.likeable.likes_count}")
+      logger.debug("[DEBUG] <LikesController> destroy: Likes count on post #{ Post.find(params[:post_id]).likes_count}")
     end
 
     #render { head :no_content, status: :no_content, location: nil }
