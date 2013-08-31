@@ -1,5 +1,11 @@
 class Api::V1::PostsController < Api::V1::BaseController
 
+  # GET /api/v1/organizations/:organization_id/posts.json
+  def index
+    @posts = [Organization.find(params[:organizations_id]).actor.posts] if params[:organizations_id]
+
+  end
+
   # GET /api/v1/posts/1.json
   def show
     @post = Post.find(params[:id])

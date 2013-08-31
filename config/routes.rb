@@ -20,8 +20,8 @@ Goodaroundme::Application.routes.draw do
         post 'follow'
         delete 'unfollow'
 
-        # /organizations/:organization_id/activities
-        resources :activities, only: [:index]
+        # /organizations/:organization_id/posts
+        resources :posts, only: [:index]
       end
 
       # /users/:email
