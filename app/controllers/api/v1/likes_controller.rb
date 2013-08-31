@@ -29,19 +29,19 @@ class Api::V1::LikesController < Api::V1::BaseController
   # POST /api/v1/posts/1/likes.json
   # POST /api/v1/comments/1/likes.json
   def create
-    likeable = if params[:post_id]
+    @likeable = if params[:post_id]
               Post.find(params[:post_id])
             else
               Comment.find(params[:comment_id])
             end
-    @like = likeable.likes.new(params[:like])
-    @like.actor_id = current_actor.id
+    like = likeable.likes.new(params[:like])
+    like.actor_id = current_actor.id
+
+    @likeable.reload
 
     respond_with @like.errors, status: :unprocessable_entity, location: nil unless @like.save
 
-    10.times do
-      logger.debug("[DEBUG] <LikesController> Create: Likes count on post #{ Post.find(params[:post_id]).likes_count}")
-    end
+    logger.debug("[DEBUG] <LikesController> Create: Likes count on post #{ @likeable.likes_count}")
 
   end
 
@@ -64,16 +64,19 @@ class Api::V1::LikesController < Api::V1::BaseController
   # DELETE /api/v1/posts/1/likes/1.json
   # DELETE /api/v1/comments/1/likes/1.json
   def destroy
-    @like = if params[:post_id]
+    like = if params[:post_id]
               Post.find(params[:post_id]).likes.find(params[:id])
             else
               Comment.find(params[:comment_id]).likes.find(params[:id])
             end
-    @like.destroy
+    @likeable = like.likeable
 
-    10.times do
-      logger.debug("[DEBUG] <LikesController> destroy: Likes count on post #{ Post.find(params[:post_id]).likes_count}")
-    end
+    like.destroy
+
+    @likeable.reload
+
+    logger.debug("[DEBUG] <LikesController> destroy: Likes count on post #{ @likeable.likes_count}")
+
 
     #render { head :no_content, status: :no_content, location: nil }
   end

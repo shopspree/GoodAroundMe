@@ -20,6 +20,7 @@ class Api::V1::CommentsController < Api::V1::BaseController
     @post = Post.find(params[:post_id])
     @comment = @post.comments.new(params[:comment])
     @comment.actor_id = current_actor.id
+    @post.reload
 
     respond_with @comment.errors, status: :unprocessable_entity, location: nil unless @comment.save
   end
@@ -46,6 +47,8 @@ class Api::V1::CommentsController < Api::V1::BaseController
 
     @comment = @commentable.comments.find(params[:id])
     @comment.destroy
+
+    @commentable.reload
   end
 
 
