@@ -39,7 +39,10 @@ class Api::V1::LikesController < Api::V1::BaseController
 
     respond_with @like.errors, status: :unprocessable_entity, location: nil unless @like.save
 
-    logger.debug("[DEBUG] <LikesController> Create: Likes count on post #{@like.likeable.likes_count}")
+    10.times do
+      logger.debug("[DEBUG] <LikesController> Create: Likes count on post #{@like.likeable.likes_count}")
+    end
+
   end
 
   # PUT /api/v1/posts/1/likes/1.json
@@ -67,7 +70,11 @@ class Api::V1::LikesController < Api::V1::BaseController
               Comment.find(params[:comment_id]).likes.find(params[:id])
             end
     @like.destroy
-    logger.debug("[DEBUG] <LikesController> destroy: Likes count on post #{@like.likeable.likes_count}")
+
+    10.times do
+      logger.debug("[DEBUG] <LikesController> destroy: Likes count on post #{@like.likeable.likes_count}")
+    end
+
     #render { head :no_content, status: :no_content, location: nil }
   end
 
