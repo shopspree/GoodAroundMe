@@ -68,5 +68,8 @@ module Goodaroundme
 
     # Devise
     config.assets.initialize_on_precompile = false
+
+    # Log
+    config.log_level = :debug
   end
 end
