@@ -1,1 +1,1 @@
-json.partial! @like.likeable
+json.partial! @likeable

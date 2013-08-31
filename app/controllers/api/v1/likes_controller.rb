@@ -34,7 +34,7 @@ class Api::V1::LikesController < Api::V1::BaseController
             else
               Comment.find(params[:comment_id])
             end
-    like = likeable.likes.new(params[:like])
+    like = @likeable.likes.new(params[:like])
     like.actor_id = current_actor.id
 
     @likeable.reload
