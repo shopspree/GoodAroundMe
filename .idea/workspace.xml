@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity_inspector_observer.rb" afterPath="$PROJECT_DIR$/app/models/activity_inspector_observer.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +44,7 @@
     <file path="/post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377534987124" ignored="false" />
     <file path="/20130811142107_rename_content_to_caption_in_post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376230923808" ignored="false" />
     <file path="/activity.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376838732947" ignored="false" />
-    <file path="/activity_inspector_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376293320221" ignored="false" />
+    <file path="/activity_inspector_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377934852588" ignored="false" />
     <file path="/users_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376669708636" ignored="false" />
     <file path="/following.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376670450964" ignored="false" />
     <file path="/profiles_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376667688902" ignored="false" />
@@ -82,28 +82,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_post.json.jbuilder" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="48" selection-start="203" selection-end="249" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="notification_inspector_observer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/notification_inspector_observer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="28" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+            <state line="16" column="3" selection-start="277" selection-end="278" vertical-scroll-proportion="-9.230769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="likes_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="activity_inspector_observer.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/activity_inspector_observer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="3" selection-start="60" selection-end="60" vertical-scroll-proportion="0.023076924">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="likes_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="51" selection-start="2061" selection-end="2061" vertical-scroll-proportion="1.3">
+            <state line="69" column="51" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,7 +112,7 @@
       <file leaf-file-name="activity.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="6" column="78" selection-start="196" selection-end="204" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,7 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/organization_categories_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/activity.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder" />
@@ -206,6 +205,7 @@
         <option value="$PROJECT_DIR$/app/views/api/v1/likes/destroy.json.jbuilder" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/activity_inspector_observer.rb" />
       </list>
     </option>
   </component>
@@ -1111,13 +1111,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="32" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="2" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
@@ -1142,13 +1135,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/notification_inspector_observer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="28" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1202,13 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/like.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="27" selection-start="197" selection-end="205" vertical-scroll-proportion="0.0">
@@ -1218,7 +1197,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="51" selection-start="2061" selection-end="2061" vertical-scroll-proportion="1.3">
+        <state line="69" column="51" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="78" selection-start="196" selection-end="204" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/notification_inspector_observer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="3" selection-start="277" selection-end="278" vertical-scroll-proportion="-9.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/activity_inspector_observer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="3" selection-start="60" selection-end="60" vertical-scroll-proportion="0.023076924">
           <folding />
         </state>
       </provider>

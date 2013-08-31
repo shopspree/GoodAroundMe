@@ -1,5 +1,6 @@
 class ActivityInspectorObserver < ActiveRecord::Observer
-  observe :post, :comment, :like
+  #observe :post, :comment, :like
+  observe :post
 
   def after_create(object)
     if object.respond_to? :activity
