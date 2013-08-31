@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/likes/destroy.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/likes/destroy.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
@@ -96,7 +94,7 @@
       <file leaf-file-name="likes_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="12" selection-start="926" selection-end="926" vertical-scroll-proportion="0.31711146">
+            <state line="39" column="83" selection-start="1081" selection-end="1081" vertical-scroll-proportion="-0.03610675">
               <folding />
             </state>
           </provider>
@@ -1220,7 +1218,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="12" selection-start="926" selection-end="926" vertical-scroll-proportion="0.31711146">
+        <state line="39" column="83" selection-start="1081" selection-end="1081" vertical-scroll-proportion="-0.03610675">
           <folding />
         </state>
       </provider>

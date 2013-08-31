@@ -37,10 +37,9 @@ class Api::V1::LikesController < Api::V1::BaseController
     like = @likeable.likes.new(params[:like])
     like.actor_id = current_actor.id
 
+    respond_with @like.errors, status: :unprocessable_entity, location: nil unless like.save
+
     @likeable.reload
-
-    respond_with @like.errors, status: :unprocessable_entity, location: nil unless @like.save
-
     logger.debug("[DEBUG] <LikesController> Create: Likes count on post #{ @likeable.likes_count}")
 
   end
