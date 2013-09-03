@@ -18,7 +18,7 @@ class Api::V1::UsersController < Api::V1::BaseController
     @user.person.profile.assign_attributes(last_name: params[:user][:last_name]) if params[:user][:last_name]
     @user.person.profile.assign_attributes(thumbnail_url: params[:user][:thumbnail_url]) if params[:user][:thumbnail_url]
 
-    render json: @user.errors, status: :unprocessable_entity unless user.save
+    render json: @user.errors, status: :unprocessable_entity unless @user.save
 
   end
 
