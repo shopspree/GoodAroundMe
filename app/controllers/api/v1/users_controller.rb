@@ -12,7 +12,7 @@ class Api::V1::UsersController < Api::V1::BaseController
 
   # PUT /api/v1/users/john.doe@email.com.json
   def update
-    @user = user_by_email(params[:user][:email])
+    @user = user_by_email(params[:email])
 
     @user.person.profile.assign_attributes(first_name: params[:user][:first_name]) if params[:user][:first_name]
     @user.person.profile.assign_attributes(last_name: params[:user][:last_name]) if params[:user][:last_name]
