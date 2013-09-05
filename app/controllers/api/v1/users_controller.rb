@@ -13,12 +13,13 @@ class Api::V1::UsersController < Api::V1::BaseController
   # PUT /api/v1/users/john.doe@email.com.json
   def update
     @user = user_by_email(params[:email])
+    profile =  @user.person.profile
 
-    @user.person.profile.assign_attributes(first_name: params[:user][:first_name]) if params[:user][:first_name]
-    @user.person.profile.assign_attributes(last_name: params[:user][:last_name]) if params[:user][:last_name]
-    @user.person.profile.assign_attributes(thumbnail_url: params[:user][:thumbnail_url]) if params[:user][:thumbnail_url]
+    profile.assign_attributes(first_name: params[:user][:first_name]) if params[:user][:first_name]
+    profile.assign_attributes(last_name: params[:user][:last_name]) if params[:user][:last_name]
+    profile.assign_attributes(thumbnail_url: params[:user][:thumbnail_url]) if params[:user][:thumbnail_url]
 
-    render json: @user.errors, status: :unprocessable_entity unless @user.save
+    render json: @user.errors, status: :unprocessable_entity unless profile.save
 
   end
 

@@ -16,15 +16,9 @@ class Api::V1::OrganizationsController < Api::V1::BaseController
 
   # POST /api/v1/organizations.json
   def create
-    @organization = Organization.new(params[:api_v1_organization])
+    @organization = Organization.new(params[:organization])
 
-    respond_to do |format|
-      if @api_v1_organization.save
-        format.json { render json: @organization, status: :created, location: @organization }
-      else
-        format.json {  }
-      end
-    end
+    respond_with @organization.errors, status: :unprocessable_entity unless @organization.save
   end
 
   # PUT /api/v1/organizations/1.json
