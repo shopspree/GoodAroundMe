@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
@@ -87,7 +86,7 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="75" selection-start="727" selection-end="727" vertical-scroll-proportion="0.50239235">
+            <state line="21" column="24" selection-start="676" selection-end="676" vertical-scroll-proportion="0.50239235">
               <folding />
             </state>
           </provider>
@@ -1324,7 +1323,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="75" selection-start="727" selection-end="727" vertical-scroll-proportion="0.50239235">
+        <state line="21" column="24" selection-start="676" selection-end="676" vertical-scroll-proportion="0.50239235">
           <folding />
         </state>
       </provider>
