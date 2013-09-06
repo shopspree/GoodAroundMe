@@ -13,7 +13,7 @@ class Post < ActiveRecord::Base
   has_one :activity, as: :timelineable, dependent: :destroy
   has_one :audience, as: :audienceable, dependent: :destroy
 
-  belongs_to :actor
+  belongs_to :actor, counter_cache: :posts_count
   belongs_to :contributor, class_name: "Actor"
 
   accepts_nested_attributes_for :medias
