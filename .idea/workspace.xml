@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/organization.rb" afterPath="$PROJECT_DIR$/app/models/organization.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
     <file path="/_user.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378510667836" ignored="false" />
     <file path="/_organization_category.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376776007986" ignored="false" />
     <file path="/organization_organization_category.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376121366927" ignored="false" />
-    <file path="/_organization.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378634292726" ignored="false" />
+    <file path="/_organization.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378635521335" ignored="false" />
     <file path="/20130810080421_rename_descrption_to_about_in_organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376121881317" ignored="false" />
     <file path="/20130810083308_add_posts_count_to_organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376123695225" ignored="false" />
     <file path="/organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377952970770" ignored="false" />
@@ -154,7 +153,7 @@
       <file leaf-file-name="_organization.json.jbuilder" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="154" selection-end="154" vertical-scroll-proportion="0.04784689">
+            <state line="2" column="31" selection-start="166" selection-end="166" vertical-scroll-proportion="0.04784689">
               <folding />
             </state>
           </provider>
@@ -995,7 +994,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="154" selection-end="154" vertical-scroll-proportion="0.04784689">
+        <state line="2" column="31" selection-start="166" selection-end="166" vertical-scroll-proportion="0.04784689">
           <folding />
         </state>
       </provider>
