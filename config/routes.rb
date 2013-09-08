@@ -13,7 +13,9 @@ Goodaroundme::Application.routes.draw do
       resources :activities, only: [:index, :show]
 
       # /organization_categories/
-      resources :organization_categories, only: [:index]
+      resources :organization_categories, only: [:index] do
+        resources :organizations, only: [:create, :update]
+      end
 
       # /organizations
       resources :organizations, only: [:index, :show, :create, :update, :destroy] do
