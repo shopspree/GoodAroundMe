@@ -33,6 +33,11 @@ class Api::V1::OrganizationsController < Api::V1::BaseController
     @organization = Organization.find(params[:id])
     @organization.assign_attributes(params[:organization])
 
+    if (params[:organization][:organization_category])
+      @organization.organization_organization_categories.clear
+      @organization.organization_categories << OrganizationCategory.find(params[:organization][:organization_category])
+    end
+
     respond_with @organization.errors, status: :unprocessable_entity unless @organization.save
   end
 

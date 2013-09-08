@@ -14,11 +14,11 @@ Goodaroundme::Application.routes.draw do
 
       # /organization_categories/
       resources :organization_categories, only: [:index] do
-        resources :organizations, only: [:create, :update]
+        resources :organizations, only: [:create]
       end
 
       # /organizations
-      resources :organizations, only: [:index, :show, :create, :update, :destroy] do
+      resources :organizations, only: [:index, :show, :update, :destroy] do
         post 'follow'
         delete 'unfollow'
 
