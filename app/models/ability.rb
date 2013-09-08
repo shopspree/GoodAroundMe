@@ -53,7 +53,6 @@ class Ability
             (comment.post.actor_id == person.organization.actor_id if person.organization) # can destroy comment they own or for post they own
       end
 
-
       # Like
       can [:read, :create], Like # anyone can like
       can :destroy, Like, actor_id: actor.id  # can destroy like they own
@@ -70,6 +69,12 @@ class Ability
 
       #Organization
       can [:read, :follow, :unfollow],   Organization
+      can [:create], Organization do |organization|
+        person.operator && person.organization.nil?
+      end
+      can [:update], Organization do |organization|
+        person.organization == organization
+      end
 
       #OrganizationCategory
       can [:read],   OrganizationCategory
