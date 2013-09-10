@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/organizations/followers.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/organizations/followers.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,7 +68,7 @@
     <file path="/applications_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378633264541" ignored="false" />
     <file path="/actor.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378633751855" ignored="false" />
     <file path="/20130908095218_add_posts_count_to_actor.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378634033671" ignored="false" />
-    <file path="/followers.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378824891727" ignored="false" />
+    <file path="/followers.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378826172509" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +109,7 @@
       <file leaf-file-name="followers.json.jbuilder" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/followers.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="3" selection-start="245" selection-end="245" vertical-scroll-proportion="0.11363637">
+            <state line="4" column="3" selection-start="242" selection-end="242" vertical-scroll-proportion="0.09090909">
               <folding />
             </state>
           </provider>
@@ -998,7 +997,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/followers.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="245" selection-end="245" vertical-scroll-proportion="0.11363637">
+        <state line="4" column="3" selection-start="242" selection-end="242" vertical-scroll-proportion="0.09090909">
           <folding />
         </state>
       </provider>
