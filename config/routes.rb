@@ -21,6 +21,7 @@ Goodaroundme::Application.routes.draw do
       resources :organizations, only: [:index, :show, :update, :destroy] do
         post 'follow'
         delete 'unfollow'
+        get 'followers'
 
         # /organizations/:organization_id/posts
         resources :posts, only: [:index]

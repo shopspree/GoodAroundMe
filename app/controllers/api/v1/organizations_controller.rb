@@ -79,4 +79,9 @@ class Api::V1::OrganizationsController < Api::V1::BaseController
 
   end
 
+  # GET /api/v1/organizations/1/followers.json
+  def followers
+    @organization = Organization.find(params[:organization_id])
+  end
+
 end
