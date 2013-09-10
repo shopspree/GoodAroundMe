@@ -109,7 +109,7 @@
       <file leaf-file-name="followers.json.jbuilder" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/followers.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="3" selection-start="242" selection-end="242" vertical-scroll-proportion="0.09090909">
+            <state line="4" column="2" selection-start="238" selection-end="238" vertical-scroll-proportion="0.09090909">
               <folding />
             </state>
           </provider>
@@ -997,7 +997,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/followers.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="242" selection-end="242" vertical-scroll-proportion="0.09090909">
+        <state line="4" column="2" selection-start="238" selection-end="238" vertical-scroll-proportion="0.09090909">
           <folding />
         </state>
       </provider>
