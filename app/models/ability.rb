@@ -68,7 +68,7 @@ class Ability
       can [:update, :update_password], User, id: user.id
 
       #Organization
-      can [:read, :follow, :unfollow],   Organization
+      can [:read, :follow, :unfollow, :followers],   Organization
       can [:create], Organization do |organization|
         person.operator && person.organization.nil?
       end
