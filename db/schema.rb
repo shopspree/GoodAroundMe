@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130908095246) do
+ActiveRecord::Schema.define(:version => 20130912142745) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -253,6 +253,15 @@ ActiveRecord::Schema.define(:version => 20130908095246) do
     t.integer  "subcategories_count"
     t.integer  "contributor_id"
     t.string   "title"
+  end
+
+  create_table "problems", :force => true do |t|
+    t.string   "area"
+    t.text     "report"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "screenshot_url"
+    t.integer  "actor_id"
   end
 
   create_table "profiles", :force => true do |t|

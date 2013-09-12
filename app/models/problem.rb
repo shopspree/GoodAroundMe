@@ -1,3 +1,6 @@
 class Problem < ActiveRecord::Base
-  attr_accessible :area, :report
+
+  belongs_to :actor
+
+  attr_accessible :area, :report, :actor_id, :screenshot_url
 end
