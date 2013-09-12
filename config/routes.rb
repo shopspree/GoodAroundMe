@@ -68,6 +68,9 @@ Goodaroundme::Application.routes.draw do
 
       end
 
+      # /problems
+      resource :problems, only: [:create]
+
     end
   end
 

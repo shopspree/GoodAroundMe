@@ -1,0 +1,21 @@
+<h1>Listing api_v1_problems</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @api_v1_problems.each do |api_v1_problem| %>
+  <tr>
+    <td><%= link_to 'Show', api_v1_problem %></td>
+    <td><%= link_to 'Edit', edit_api_v1_problem_path(api_v1_problem) %></td>
+    <td><%= link_to 'Destroy', api_v1_problem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Problem', new_api_v1_problem_path %>

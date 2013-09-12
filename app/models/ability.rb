@@ -76,8 +76,11 @@ class Ability
         person.organization == organization
       end
 
-      #OrganizationCategory
+      # OrganizationCategory
       can [:read],   OrganizationCategory
+
+      # Problem
+      can [:create], Problem
 
       # Mention
       #can [:create, :read], Mention do |mention|
