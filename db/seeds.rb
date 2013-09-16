@@ -15,12 +15,12 @@ Context.create(name: Settings['context.global.name'])
 
 # OrganizationCategory:
 # Project, Product, Offsite
-OrganizationCategory.create(name: 'Welfare')
-OrganizationCategory.create(name: 'Animals')
-OrganizationCategory.create(name: 'Environment')
-OrganizationCategory.create(name: 'Health')
-OrganizationCategory.create(name: 'Peace & Coexistence')
-OrganizationCategory.create(name: 'Children')
+OrganizationCategory.create(name: 'Welfare', image_url: 'https://s3.amazonaws.com/GoodAroundMe/categories/categories_walefare_01.jpg')
+OrganizationCategory.create(name: 'Animals', image_url: 'https://s3.amazonaws.com/GoodAroundMe/categories/categories_animals_01.jpg')
+OrganizationCategory.create(name: 'Environment', image_url: 'https://s3.amazonaws.com/GoodAroundMe/categories/categories_environment_01.jpg')
+OrganizationCategory.create(name: 'Health', image_url:'https://s3.amazonaws.com/GoodAroundMe/categories/categories_health.jpg')
+OrganizationCategory.create(name: 'Peace & Coexistence', image_url: 'https://s3.amazonaws.com/GoodAroundMe/categories/categories_peace_01.jpg')
+OrganizationCategory.create(name: 'Children', image_url: 'https://s3.amazonaws.com/GoodAroundMe/categories/categories_children_01.jpg')
 
 # GroupType
 # Organization, Team

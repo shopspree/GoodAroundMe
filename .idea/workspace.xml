@@ -14,7 +14,7 @@
     <file path="/user.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377503019776" ignored="false" />
     <file path="/user_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376486782908" ignored="false" />
     <file path="/settings.yml" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375834024711" ignored="false" />
-    <file path="/seeds.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379342270514" ignored="false" />
+    <file path="/seeds.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379345125157" ignored="false" />
     <file path="/person.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377504870311" ignored="false" />
     <file path="/application.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377933323661" ignored="false" />
     <file path="/person_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377438895850" ignored="false" />
@@ -158,7 +158,7 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="43" selection-start="829" selection-end="829" vertical-scroll-proportion="0.5246423">
+            <state line="22" column="133" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.53571427">
               <folding />
             </state>
           </provider>
@@ -1076,7 +1076,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="43" selection-start="829" selection-end="829" vertical-scroll-proportion="0.5246423">
+        <state line="22" column="133" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.53571427">
           <folding />
         </state>
       </provider>
