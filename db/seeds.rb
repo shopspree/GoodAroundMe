@@ -18,6 +18,9 @@ Context.create(name: Settings['context.global.name'])
 OrganizationCategory.create(name: 'Welfare')
 OrganizationCategory.create(name: 'Animals')
 OrganizationCategory.create(name: 'Environment')
+OrganizationCategory.create(name: 'Health')
+OrganizationCategory.create(name: 'Peace & Coexistence')
+OrganizationCategory.create(name: 'Children')
 
 # GroupType
 # Organization, Team
