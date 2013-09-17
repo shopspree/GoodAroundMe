@@ -73,7 +73,7 @@
     <file path="/problems_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378996021124" ignored="false" />
     <file path="/problem.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378995968935" ignored="false" />
     <file path="/20130912142745_add_actor_id_to_problem.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378996092731" ignored="false" />
-    <file path="/newrelic.yml" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379368676976" ignored="false" />
+    <file path="/newrelic.yml" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379435309019" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +159,7 @@
       <file leaf-file-name="newrelic.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="56" selection-start="661" selection-end="701" vertical-scroll-proportion="0.2305141">
+            <state line="45" column="26" selection-start="1782" selection-end="1782" vertical-scroll-proportion="-3.7512438">
               <folding />
             </state>
           </provider>
@@ -1045,7 +1045,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="56" selection-start="661" selection-end="701" vertical-scroll-proportion="0.2305141">
+        <state line="45" column="26" selection-start="1782" selection-end="1782" vertical-scroll-proportion="-3.7512438">
           <folding />
         </state>
       </provider>
