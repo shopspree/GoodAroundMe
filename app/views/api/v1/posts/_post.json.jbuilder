@@ -7,7 +7,7 @@ json.post do |json|
 
   logger.debug("[DEBUG] <_post.json.builder> current_user is #{current_user}")
   like = like_by_user(post, current_user)
-  logger.debug("[DEBUG] <_post.json.builder> like #{like.id} actor is #{like.actor.id} while current_user actor is #{current_user.person.actor.id}")
+  logger.debug("[DEBUG] <_post.json.builder> like #{like.id} actor is #{like.actor.id} while current_user actor is #{current_user.person.actor.id}") if like
   json.partial! like
 
   json.medias post.medias do |media|
