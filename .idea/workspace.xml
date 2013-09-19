@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/newrelic.yml" afterPath="$PROJECT_DIR$/config/newrelic.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +41,7 @@
     <file path="/organizations_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378824750910" ignored="false" />
     <file path="/20130810125632_add_follows_to_organization_and_person.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376139715202" ignored="false" />
     <file path="/ability.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379449053218" ignored="false" />
-    <file path="/_post.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377791418024" ignored="false" />
+    <file path="/_post.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379585436634" ignored="false" />
     <file path="/post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378634073131" ignored="false" />
     <file path="/20130811142107_rename_content_to_caption_in_post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376230923808" ignored="false" />
     <file path="/activity.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376838732947" ignored="false" />
@@ -59,7 +58,7 @@
     <file path="/base_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377518938211" ignored="false" />
     <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377978177247" ignored="false" />
     <file path="/media.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377535479613" ignored="false" />
-    <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377789937520" ignored="false" />
+    <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379585401147" ignored="false" />
     <file path="/_comment.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377843528119" ignored="false" />
     <file path="/_like.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377681596898" ignored="false" />
     <file path="/likes_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377936742978" ignored="false" />
@@ -116,16 +115,16 @@
       <file leaf-file-name="_post.json.jbuilder" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="48" selection-start="217" selection-end="249" vertical-scroll-proportion="0.0">
+            <state line="7" column="2" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="likes_helper.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="likes_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="4" column="94" selection-start="192" selection-end="192" vertical-scroll-proportion="0.14018692">
               <folding />
             </state>
           </provider>
@@ -143,43 +142,7 @@
       <file leaf-file-name="likes_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.json.jbuilder" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/create.json.jbuilder">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="problem.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/problem.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="2" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="1229" selection-end="1364" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newrelic.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="2" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.8146965">
+            <state line="43" column="4" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -203,8 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20130908095218_add_posts_count_to_actor.rb" />
-        <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/app/models/organization.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb" />
@@ -219,6 +180,8 @@
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" />
         <option value="$PROJECT_DIR$/config/newrelic.yml" />
+        <option value="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
       </list>
     </option>
   </component>
@@ -971,8 +934,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38719067" sideWeight="0.6804565" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3195435" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38719067" sideWeight="0.68136555" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31863442" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281027" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1056,13 +1019,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/problems/create.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1091,20 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/problem.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="1229" selection-end="1364" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="50" selection-start="2507" selection-end="2507" vertical-scroll-proportion="0.0">
@@ -1126,16 +1068,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="217" selection-end="249" vertical-scroll-proportion="0.0">
+        <state line="25" column="16" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb">
+    <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="60" column="2" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.8146965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="1229" selection-end="1364" vertical-scroll-proportion="0.5164319">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/problem.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="2" selection-start="38" selection-end="38" vertical-scroll-proportion="0.04601227">
           <folding />
         </state>
       </provider>
@@ -1149,21 +1105,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="4" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
+        <state line="7" column="2" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
+    <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="2" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.8146965">
+        <state line="4" column="94" selection-start="192" selection-end="192" vertical-scroll-proportion="0.14018692">
           <folding />
         </state>
       </provider>
