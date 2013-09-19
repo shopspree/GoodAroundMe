@@ -5,9 +5,10 @@ json.post do |json|
     json.partial! post.contributor.actorable.user
   end
 
+  logger.debug("[DEBUG] <_post.json.builder> current_user is #{current_user}")
   like = like_by_user(post, current_user)
-  json.partial! like
   logger.debug("[DEBUG] <_post.json.builder> like #{like.id} actor is #{like.actor.id} while current_user actor is #{current_user.person.actor.id}")
+  json.partial! like
 
   json.medias post.medias do |media|
     json.id media.id
