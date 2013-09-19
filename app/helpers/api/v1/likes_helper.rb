@@ -4,9 +4,11 @@ module Api::V1::LikesHelper
     user_actor_id = user.person.actor.id
 
     likeable.likes.each do |like|
-      logger.debug("[DEBUG] <LikesHelper> like #{like.id} actor is #{like.actor.id} while current_user actor is #{user_actor_id}")
       if like.actor_id == user_actor_id
+        logger.debug("[DEBUG] <LikesHelper> TRUE! like #{like.id} actor is #{like.actor_id} while current_user actor is #{user_actor_id}")
         return like
+      else
+        logger.debug("[DEBUG] <LikesHelper> FALSE! like #{like.id} actor is #{like.actor.id} while current_user actor is #{user_actor_id}")
       end
 
     end
