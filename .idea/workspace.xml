@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +57,7 @@
     <file path="/base_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377518938211" ignored="false" />
     <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377978177247" ignored="false" />
     <file path="/media.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377535479613" ignored="false" />
-    <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379587503366" ignored="false" />
+    <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379588396855" ignored="false" />
     <file path="/_comment.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377843528119" ignored="false" />
     <file path="/_like.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377681596898" ignored="false" />
     <file path="/likes_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377936742978" ignored="false" />
@@ -111,19 +111,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_post.json.jbuilder" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_post.json.jbuilder" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="41" selection-start="242" selection-end="242" vertical-scroll-proportion="0.23972602">
+            <state line="7" column="41" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="likes_helper.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="likes_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+            <state line="3" column="38" selection-start="102" selection-end="102" vertical-scroll-proportion="0.10273973">
               <folding />
             </state>
           </provider>
@@ -170,8 +170,8 @@
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" />
         <option value="$PROJECT_DIR$/config/newrelic.yml" />
-        <option value="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" />
       </list>
     </option>
   </component>
@@ -1107,16 +1107,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+        <state line="7" column="41" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
+    <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="41" selection-start="242" selection-end="242" vertical-scroll-proportion="0.23972602">
+        <state line="3" column="38" selection-start="102" selection-end="102" vertical-scroll-proportion="0.10273973">
           <folding />
         </state>
       </provider>
