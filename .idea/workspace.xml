@@ -57,7 +57,7 @@
     <file path="/base_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377518938211" ignored="false" />
     <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377978177247" ignored="false" />
     <file path="/media.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377535479613" ignored="false" />
-    <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379589667058" ignored="false" />
+    <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379589922875" ignored="false" />
     <file path="/_comment.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377843528119" ignored="false" />
     <file path="/_like.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377681596898" ignored="false" />
     <file path="/likes_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377936742978" ignored="false" />
@@ -123,7 +123,7 @@
       <file leaf-file-name="likes_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="50" selection-start="230" selection-end="230" vertical-scroll-proportion="0.24418604">
+            <state line="6" column="51" selection-start="128" selection-end="168" vertical-scroll-proportion="0.20930232">
               <folding />
             </state>
           </provider>
@@ -1125,7 +1125,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="230" selection-end="230" vertical-scroll-proportion="0.24418604">
+        <state line="6" column="51" selection-start="128" selection-end="168" vertical-scroll-proportion="0.20930232">
           <folding />
         </state>
       </provider>
