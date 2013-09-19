@@ -58,7 +58,7 @@
     <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377978177247" ignored="false" />
     <file path="/media.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377535479613" ignored="false" />
     <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379590000380" ignored="false" />
-    <file path="/_comment.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377843528119" ignored="false" />
+    <file path="/_comment.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379594274132" ignored="false" />
     <file path="/_like.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377681596898" ignored="false" />
     <file path="/likes_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377936742978" ignored="false" />
     <file path="/comments_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377936829947" ignored="false" />
@@ -114,7 +114,7 @@
       <file leaf-file-name="_comment.json.jbuilder" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="202" selection-end="202" vertical-scroll-proportion="0.13544019">
+            <state line="3" column="29" selection-start="161" selection-end="161" vertical-scroll-proportion="0.101580136">
               <folding />
             </state>
           </provider>
@@ -1107,7 +1107,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="202" selection-end="202" vertical-scroll-proportion="0.13544019">
+        <state line="3" column="29" selection-start="161" selection-end="161" vertical-scroll-proportion="0.101580136">
           <folding />
         </state>
       </provider>
