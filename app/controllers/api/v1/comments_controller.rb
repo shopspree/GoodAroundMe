@@ -20,9 +20,10 @@ class Api::V1::CommentsController < Api::V1::BaseController
     @post = Post.find(params[:post_id])
     @comment = @post.comments.new(params[:comment])
     @comment.actor_id = current_actor.id
-    @post.reload
 
     respond_with @comment.errors, status: :unprocessable_entity, location: nil unless @comment.save
+
+    @post.reload
   end
 
   # PUT /api/v1/posts/1/comments/1.json
