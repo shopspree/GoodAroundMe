@@ -5,7 +5,6 @@ class Operator < ActiveRecord::Base
 
   attr_accessible :email, :organization_id, :person_id
 
-  validates :organization_id, presence: true
   validates :person_id, presence: true, uniqueness: { scope: :organization_id }
 
   before_validation :validate_values
