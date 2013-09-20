@@ -23,7 +23,7 @@ class Api::V1::OrganizationsController < Api::V1::BaseController
                     end
 
     @organization.followers << current_person
-    @organization.operators << current_person
+    @organization.operators << current_person.operator if current_person.operator
 
     respond_with @organization.errors, status: :unprocessable_entity unless @organization.save
   end
