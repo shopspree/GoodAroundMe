@@ -25,6 +25,9 @@ Goodaroundme::Application.routes.draw do
 
         # /organizations/:organization_id/posts
         resources :posts, only: [:index]
+
+        # /organizations/:organization_id/activities
+        resources :activities, only: [:index]
       end
 
       # /users/:email
