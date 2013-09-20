@@ -2,7 +2,7 @@ class Api::V1::PostsController < Api::V1::BaseController
 
   # GET /api/v1/organizations/:organization_id/posts.json
   def index
-    @posts = [Organization.find(params[:organization_id]).actor.posts] if params[:organization_id]
+    @posts = Organization.find(params[:organization_id]).actor.posts if params[:organization_id]
 
   end
 
