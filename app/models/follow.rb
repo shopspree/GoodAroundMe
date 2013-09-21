@@ -1,7 +1,7 @@
 class Follow < ActiveRecord::Base
 
   belongs_to :person, counter_cache: :followings_count
-  belongs_to :organization#, counter_cache: :followers_count  #bug in rails ?
+  belongs_to :organization, counter_cache: :count_of_followers, touch: true
 
   attr_accessible :organization_id, :person_id
 

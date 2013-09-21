@@ -71,7 +71,7 @@ class Api::V1::OrganizationsController < Api::V1::BaseController
     @person = current_person
 
     if @person.following.include? @organization
-      @person.following.delete(@organization)
+      @person.following.destroy(@organization)
       @person.save
     else
       render json: {success: false, errors: "Not following #{@organization.name} from first place"}, status: :unprocessable_entity
