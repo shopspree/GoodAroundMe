@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130912142745) do
+ActiveRecord::Schema.define(:version => 20130921084954) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -217,14 +217,14 @@ ActiveRecord::Schema.define(:version => 20130912142745) do
 
   create_table "organizations", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at",                                        :null => false
-    t.datetime "updated_at",                                        :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
     t.integer  "context_id"
     t.string   "image_thumbnail_url"
     t.text     "about",               :limit => 255
     t.string   "website_url"
-    t.integer  "followers_count",                    :default => 0
     t.string   "location"
+    t.integer  "followers_count"
   end
 
   create_table "people", :force => true do |t|

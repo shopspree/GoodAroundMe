@@ -14,15 +14,15 @@ class Api::V1::OrganizationsController < Api::V1::BaseController
     @organization = Organization.find(params[:id])
   end
 
-  # POST /api/v1/organization_categories/:organization_categories_id/organizations.json
+  # POST /api/v1/organization_categories/:organization_category_id/organizations.json
   def create
-    @organization = if params[:organization_categories_id]
-                      OrganizationCategory.find(:organization_categories_id).organizations.new(params[:organization]) if OrganizationCategory.find(params[:organizations_category_id])
+    @organization = if params[:organization_category_id]
+                      OrganizationCategory.find(params[:organization_category_id]).organizations.new(params[:organization]) if OrganizationCategory.find(params[:organization_category_id])
                     else
                       Organization.new(params[:organization])
                     end
 
-    @organization.followers << current_person
+    #@organization.followers << current_person
     @organization.operators << current_person.operator if current_person.operator
 
     respond_with @organization.errors, status: :unprocessable_entity unless @organization.save
