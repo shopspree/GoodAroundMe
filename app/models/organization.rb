@@ -10,7 +10,7 @@ class Organization < ActiveRecord::Base
 
   belongs_to :context
 
-  attr_accessible :context_id, :name, :about, :website_url, :image_thumbnail_url, :location, :count_of_followers
+  attr_accessible :context_id, :name, :about, :website_url, :image_thumbnail_url, :location
 
   validates :name, presence: true, uniqueness: true
 
