@@ -50,7 +50,7 @@ class Ability
       can :update,  Comment, actor_id: actor.id  # can update comment they own
       can :destroy, Comment do |comment|
         (comment.actor_id == actor.id) ||
-            (comment.post.actor_id == person.organization.actor_id if person.organization) # can destroy comment they own or for post they own
+            (person.organization && comment.post.actor_id == person.organization.actor_id) # can destroy comment they own or for post they own
       end
 
       # Like
