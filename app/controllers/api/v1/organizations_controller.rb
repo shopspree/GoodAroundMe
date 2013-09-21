@@ -59,6 +59,9 @@ class Api::V1::OrganizationsController < Api::V1::BaseController
     unless @person.following.include? @organization
       @person.following << @organization
       @person.save
+
+      # fix rails bug with counter_cache
+      @organization.update_attributes(count_of_followers: @organization.followers.count)
     else
       render json: {success: false, errors: "Already following #{@organization.name}"}, status: :unprocessable_entity
     end
@@ -73,6 +76,9 @@ class Api::V1::OrganizationsController < Api::V1::BaseController
     if @person.following.include? @organization
       @person.following.destroy(@organization)
       @person.save
+
+      # fix rails bug with counter_cache
+      @organization.update_attributes(count_of_followers: @organization.followers.count)
     else
       render json: {success: false, errors: "Not following #{@organization.name} from first place"}, status: :unprocessable_entity
     end
