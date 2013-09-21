@@ -40,7 +40,7 @@ class Ability
       can :create,  Post do |post|
         !person.orgnization.nil? # can create post if is assigned to an organization
       end
-      can [:update, :destroy], Post, :actor_id == person.organization.actor.id # can update or destroy post on organization they are assigned
+      can [:update, :destroy], Post, actor_id: person.organization.actor.id # can update or destroy post on organization they are assigned
       can [:read, :popular], Post # anyone can read posts
 
       # Comment
