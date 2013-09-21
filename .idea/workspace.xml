@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/follow.rb" afterPath="$PROJECT_DIR$/app/models/follow.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="follow.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="follow.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/follow.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="62" selection-start="134" selection-end="152" vertical-scroll-proportion="0.0">
+            <state line="3" column="62" selection-start="152" selection-end="152" vertical-scroll-proportion="0.09977827">
               <folding />
             </state>
           </provider>
@@ -148,10 +144,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ability.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ability.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="42" selection-start="1521" selection-end="1521" vertical-scroll-proportion="0.23972602">
+            <state line="43" column="42" selection-start="1521" selection-end="1521" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -187,10 +183,10 @@
         <option value="$PROJECT_DIR$/db/migrate/20130921084954_add_followers_count2_to_organizations.rb" />
         <option value="$PROJECT_DIR$/app/models/problem.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130921111830_add_count_of_followers_to_organization.rb" />
-        <option value="$PROJECT_DIR$/app/models/follow.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
+        <option value="$PROJECT_DIR$/app/models/follow.rb" />
       </list>
     </option>
   </component>
@@ -932,13 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/follow.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="62" selection-start="134" selection-end="152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="54" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
@@ -948,7 +937,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="42" selection-start="1521" selection-end="1521" vertical-scroll-proportion="0.23972602">
+        <state line="43" column="42" selection-start="1521" selection-end="1521" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/follow.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="62" selection-start="152" selection-end="152" vertical-scroll-proportion="0.09977827">
           <folding />
         </state>
       </provider>
