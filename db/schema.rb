@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130921111830) do
+ActiveRecord::Schema.define(:version => 20130922154425) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -243,13 +243,13 @@ ActiveRecord::Schema.define(:version => 20130921111830) do
   end
 
   create_table "posts", :force => true do |t|
-    t.string   "caption"
+    t.text     "caption",                     :limit => 255
     t.integer  "actor_id"
-    t.datetime "created_at",                                 :null => false
-    t.datetime "updated_at",                                 :null => false
-    t.integer  "likes_count",                 :default => 0
-    t.integer  "comments_count",              :default => 0
-    t.integer  "inappropriate_reports_count", :default => 0
+    t.datetime "created_at",                                                :null => false
+    t.datetime "updated_at",                                                :null => false
+    t.integer  "likes_count",                                :default => 0
+    t.integer  "comments_count",                             :default => 0
+    t.integer  "inappropriate_reports_count",                :default => 0
     t.integer  "subcategories_count"
     t.integer  "contributor_id"
     t.string   "title"
