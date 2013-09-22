@@ -39,7 +39,7 @@
     <file path="/20130810103501_drop_follower_follow_organization_tables.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376131039046" ignored="false" />
     <file path="/organizations_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379776915586" ignored="false" />
     <file path="/20130810125632_add_follows_to_organization_and_person.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376139715202" ignored="false" />
-    <file path="/ability.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379767499162" ignored="false" />
+    <file path="/ability.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379845747878" ignored="false" />
     <file path="/_post.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379587864968" ignored="false" />
     <file path="/post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378634073131" ignored="false" />
     <file path="/20130811142107_rename_content_to_caption_in_post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376230923808" ignored="false" />
@@ -129,7 +129,7 @@
       <file leaf-file-name="organizations_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="18" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.0">
+            <state line="44" column="13" selection-start="1783" selection-end="1790" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,7 +147,7 @@
       <file leaf-file-name="ability.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="46" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.20547946">
+            <state line="43" column="71" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.34246576">
               <folding />
             </state>
           </provider>
@@ -921,20 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/organization.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="91" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="18" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="51" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
@@ -942,9 +928,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="13" selection-start="1783" selection-end="1790" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/organization.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="91" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="46" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.20547946">
+        <state line="43" column="71" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.34246576">
           <folding />
         </state>
       </provider>
