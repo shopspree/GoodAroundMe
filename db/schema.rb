@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130922154425) do
+ActiveRecord::Schema.define(:version => 20130924123655) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -73,15 +73,15 @@ ActiveRecord::Schema.define(:version => 20130922154425) do
   end
 
   create_table "comments", :force => true do |t|
-    t.string   "content"
+    t.text     "content",                     :limit => 255
     t.integer  "actor_id"
     t.integer  "commentable_id"
     t.string   "commentable_type"
-    t.datetime "created_at",                                 :null => false
-    t.datetime "updated_at",                                 :null => false
-    t.integer  "comments_count",              :default => 0
-    t.integer  "likes_count",                 :default => 0
-    t.integer  "inappropriate_reports_count", :default => 0
+    t.datetime "created_at",                                                :null => false
+    t.datetime "updated_at",                                                :null => false
+    t.integer  "comments_count",                             :default => 0
+    t.integer  "likes_count",                                :default => 0
+    t.integer  "inappropriate_reports_count",                :default => 0
   end
 
   create_table "contexts", :force => true do |t|

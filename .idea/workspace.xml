@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
-    </list>
+    <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="" />
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378986276582" ignored="false" />
@@ -81,6 +79,7 @@
     <file path="/20130921084455_remove_followers_count_to_organizations.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379753112062" ignored="false" />
     <file path="/20130921111830_add_count_of_followers_to_organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379762349106" ignored="false" />
     <file path="/20130922154425_change_caption_to_text_in_post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379864695513" ignored="false" />
+    <file path="/20130924123655_change_content_to_text_in_comment.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1380026264283" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,10 +126,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="likes_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="likes_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="17" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.5257009">
+            <state line="39" column="17" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130924123655_change_content_to_text_in_comment.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130924123655_change_content_to_text_in_comment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="46" selection-start="179" selection-end="179" vertical-scroll-proportion="0.22222222">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130922154425_change_caption_to_text_in_post.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130922154425_change_caption_to_text_in_post.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="41" selection-start="71" selection-end="108" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -172,15 +189,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ability.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="71" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -199,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130810125529_add_followers_count_to_organization.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130920133635_followers_count_in_organization.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130921082513_add_followerz_count_to_organizations.rb" />
@@ -215,6 +222,7 @@
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130922154425_change_caption_to_text_in_post.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130924123655_change_content_to_text_in_comment.rb" />
       </list>
     </option>
   </component>
@@ -865,13 +873,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130921084954_add_followers_count2_to_organizations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="142" selection-end="329" vertical-scroll-proportion="0.2453271">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130921111830_add_count_of_followers_to_organization.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="70" selection-start="348" selection-end="348" vertical-scroll-proportion="0.2453271">
@@ -935,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130922154425_change_caption_to_text_in_post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="168" selection-end="168" vertical-scroll-proportion="0.2356021">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="101" selection-start="432" selection-end="432" vertical-scroll-proportion="0.45560747">
@@ -972,7 +966,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="17" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.5257009">
+        <state line="39" column="17" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130922154425_change_caption_to_text_in_post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="41" selection-start="71" selection-end="108" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130924123655_change_content_to_text_in_comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="46" selection-start="179" selection-end="179" vertical-scroll-proportion="0.22222222">
           <folding />
         </state>
       </provider>
