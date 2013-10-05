@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/facebook/callback.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/facebook/callback.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/facebook_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/facebook_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +23,7 @@
     <file path="/organization_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375836612437" ignored="false" />
     <file path="/organization_categories_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377538834483" ignored="false" />
     <file path="/index.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379662897703" ignored="false" />
-    <file path="/routes.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1380986478199" ignored="false" />
+    <file path="/routes.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1380987420336" ignored="false" />
     <file path="/create.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378480965591" ignored="false" />
     <file path="/_user.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378510667836" ignored="false" />
     <file path="/_organization_category.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376776007986" ignored="false" />
@@ -122,7 +121,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="callback.json.jbuilder" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="21" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.6088957">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="callback.json.jbuilder" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/facebook/callback.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
@@ -135,24 +143,6 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130924123655_change_content_to_text_in_comment.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130924123655_change_content_to_text_in_comment.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="46" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130922154425_change_caption_to_text_in_post.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130922154425_change_caption_to_text_in_post.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="41" selection-start="71" selection-end="108" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -207,9 +197,9 @@
         <option value="$PROJECT_DIR$/db/migrate/20130924123655_change_content_to_text_in_comment.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/organizations/_organization.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/facebooks_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/facebook_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/facebook/callback.json.jbuilder" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -1003,23 +993,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="21" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/rails">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="32" selection-start="2028" selection-end="2040" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1034,6 +1010,20 @@
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/facebook/callback.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/organizations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="32" selection-start="2028" selection-end="2040" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="21" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.6088957">
           <folding />
         </state>
       </provider>

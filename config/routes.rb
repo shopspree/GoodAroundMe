@@ -75,7 +75,7 @@ Goodaroundme::Application.routes.draw do
       resource :problems, only: [:create]
 
       # /facebook
-      post 'callback'
+      post 'facebook/callback'
 
     end
   end
