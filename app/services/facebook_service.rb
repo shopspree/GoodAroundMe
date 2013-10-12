@@ -72,6 +72,9 @@ class FacebookService
              elsif facebook_post.updated_time != post["updated_time"]
                facebook_post.post.update_attributes(title: params[:post][:title], caption: params[:post][:caption], medias_attributes: params[:post][:medias_attributes])
              end
+      actor = facebook_service_actor
+      post.update_attributes(contributor_id: actor.id)
+
       facebook_post.facebook_id = post["id"]
       facebook_post.facebook_type = post["type"]
       facebook_post.facebook_created_at = post["created_at"]

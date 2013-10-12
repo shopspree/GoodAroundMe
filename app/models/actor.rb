@@ -12,6 +12,14 @@ class Actor < ActiveRecord::Base
 
   validates :actorable_id, presence: true
   validates :actorable_type, presence: true
-  validates :context_id, presence: true
+
+  after_create :default_values
+
+
+  protected
+
+  def default_values
+    update_attributes(context_id: Context.find_by_name(Settings['context.global.name']).id) unless context_id
+  end
 
 end

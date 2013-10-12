@@ -6,13 +6,14 @@ class Robot < ActiveRecord::Base
 
   validates_presence_of :name
 
-  before_create :default_values
+  after_save :default_values
 
 
-  public
+  protected
 
   def default_values
-    display_name ||= name
+    update_attributes(display_name: name) unless display_name
+    create_actor unless actor
   end
 
 end
