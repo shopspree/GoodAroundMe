@@ -29,7 +29,6 @@ class OrganizationsController < BaseController
   end
 
   # POST /organizations
-  # POST /organizations.json
   def create
     @organization = Organization.new(params[:organization])
 
@@ -44,10 +43,8 @@ class OrganizationsController < BaseController
     respond_to do |format|
       if @organization.save
         format.html { redirect_to @organization, notice: 'Organization was successfully created.' }
-        format.json { render json: @organization, status: :created, location: @organization }
       else
         format.html { render action: "new" }
-        format.json { render json: @organization.errors, status: :unprocessable_entity }
       end
     end
   end
