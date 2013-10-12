@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <%= @organization.name %>
+</h1>
+
+<p>
+  <b>ID:</b>
+  <%= @organization.id %>
+</p>
+
+<p>
+  <b>About:</b>
+  <%= @organization.about %>
+</p>
+
+<p>
+  <b>Categories:</b>
+  <% @organization_categories.each do |category| %>
+      <%= check_box_tag category.name, category.id, (@organization.organization_categories.include? category), disabled: true %>
+      <%= category.name %>
+  <% end %>
+</p>
+
+<p>
+  <b>Facebook Page:</b>
+  <%= @organization.facebook_page.try(:identifier) %>
+</p>
+
+
+<%= link_to 'Edit', edit_organization_path(@organization) %> |
+<%= link_to 'Back', organizations_path %>

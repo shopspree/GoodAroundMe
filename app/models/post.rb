@@ -23,6 +23,10 @@ class Post < ActiveRecord::Base
   scope :popular, lambda { where("created_at > ?", 60.days.ago) }
 
 
+  def title
+    read_attribute(:title).try(:titleize)
+  end
+
   def is_liked_by?(actor)
     likes.each do |like|
       return true if like.actor == actor

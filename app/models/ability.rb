@@ -29,7 +29,10 @@ class Ability
     # See the wiki for details:
     # https://github.com/ryanb/cancan/wiki/Defining-Abilities
 
-    if user.person
+    if user.admin?
+      can :manage, :all
+
+    elsif user.person
       person = user.person
       actor = person.actor
 
@@ -41,6 +44,7 @@ class Ability
         person.orgnization # can create post if is assigned to an organization
       end
       can [:update, :destroy], Post do |post|
+        logger.info("<Ability> Destroy post: \n#{post.inspect} \nBy person: #{person.inspect} \nOf organization: #{person.organization.actor.id}")
         person.organization && post.actor_id == person.organization.actor.id # can update or destroy post on organization they are assigned
       end
       can [:read, :popular], Post # anyone can read posts

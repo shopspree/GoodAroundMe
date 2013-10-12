@@ -1,6 +1,6 @@
 json.user do |json|
   json.(user, :email)
-  json.(user.person.profile, :full_name, :first_name, :last_name, :name_prefix, :name_suffix, :picture_url, :thumbnail_url, :gender)
+  json.(user.person.profile, :display_name, :first_name, :last_name, :name_prefix, :name_suffix, :picture_url, :thumbnail_url, :gender)
   json.operator (! user.person.operator.nil?).to_s
 
   json.following do |json|

@@ -1,7 +1,14 @@
 Goodaroundme::Application.routes.draw do
 
+  resources :tesets
+
+
   # devise
-  devise_for :users, controllers: { sessions: "api/v1/sessions", registrations: "api/v1/registrations" }
+  devise_for :users, constraints: { format: :html }
+  devise_for :users, controllers: { sessions: "api/v1/sessions", registrations: "api/v1/registrations" }, constraints: { format: :json}
+
+  # (web front)
+  resources :organizations
 
   # /api/*
   namespace :api do

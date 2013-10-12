@@ -7,10 +7,11 @@ class Organization < ActiveRecord::Base
   has_many :follows, dependent: :destroy
   has_many :followers, through: :follows, source: :person
   has_one :actor, as: :actorable
+  has_one :facebook_page
 
   belongs_to :context
 
-  attr_accessible :context_id, :name, :about, :website_url, :image_thumbnail_url, :location
+  attr_accessible :context_id, :name, :about, :website_url, :image_thumbnail_url, :location, :organization_categories
 
   validates :name, presence: true, uniqueness: true
 

@@ -1,0 +1,29 @@
+<%= form_for(@teset) do |f| %>
+  <% if @teset.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@teset.errors.count, "error") %> prohibited this teset from being saved:</h2>
+
+      <ul>
+      <% @teset.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :str %><br />
+    <%= f.text_field :str %>
+  </div>
+  <div class="field">
+    <%= f.label :int %><br />
+    <%= f.number_field :int %>
+  </div>
+  <div class="field">
+    <%= f.label :d %><br />
+    <%= f.datetime_select :d %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

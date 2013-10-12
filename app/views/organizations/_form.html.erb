@@ -1,0 +1,45 @@
+<%= form_for(@organization) do |f| %>
+    <% if @organization.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@organization.errors.count, "error") %> prohibited this organization from being saved:</h2>
+
+          <ul>
+            <% @organization.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.label :name %><br />
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :about %><br />
+      <%= f.text_area :about, class: "form-control", rows: 3 %>
+    </div>
+
+    <div class="field">
+      <%= label_tag :categories %><br />
+      <% @organization_categories.each do |category| %>
+          <div class="col-md-2">
+            <div class="checkbox">
+                <%= check_box_tag "categories[]", category.id, (@organization.organization_categories.include? category) %>
+                <%= category.name %>
+            </div>
+          </div>
+      <% end %>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag :facebook_page %><br />
+      <%= text_field_tag :facebook_page, @organization.facebook_page.try(:identifier) , class: "form-control" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit nil, class: "btn btn-primary" %>
+    </div>
+
+<% end %>

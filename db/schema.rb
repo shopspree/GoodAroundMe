@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130924123655) do
+ActiveRecord::Schema.define(:version => 20131010204639) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -90,12 +90,65 @@ ActiveRecord::Schema.define(:version => 20130924123655) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "delayed_jobs", :force => true do |t|
+    t.integer  "priority",   :default => 0, :null => false
+    t.integer  "attempts",   :default => 0, :null => false
+    t.text     "handler",                   :null => false
+    t.text     "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string   "locked_by"
+    t.string   "queue"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+  end
+
+  add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
+
   create_table "domains", :force => true do |t|
     t.string   "name"
     t.boolean  "blacklist"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
     t.integer  "organization_id"
+  end
+
+  create_table "external_organizations", :force => true do |t|
+    t.integer  "external_id"
+    t.string   "external_type"
+    t.integer  "organization_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "facebook_pages", :force => true do |t|
+    t.string   "identifier"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "organization_id"
+  end
+
+  create_table "facebook_posts", :force => true do |t|
+    t.string   "facebook_run_id"
+    t.integer  "post_id"
+    t.string   "facebook_type"
+    t.string   "facebook_object_id"
+    t.string   "facebook_id"
+    t.datetime "facebook_created_at"
+    t.datetime "facebook_updated_at"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
+
+  create_table "facebook_runs", :force => true do |t|
+    t.integer  "facebook_page_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "status"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "last_run"
   end
 
   create_table "follows", :force => true do |t|
@@ -253,6 +306,7 @@ ActiveRecord::Schema.define(:version => 20130924123655) do
     t.integer  "subcategories_count"
     t.integer  "contributor_id"
     t.string   "title"
+    t.string   "source"
   end
 
   create_table "problems", :force => true do |t|
@@ -278,9 +332,16 @@ ActiveRecord::Schema.define(:version => 20130924123655) do
     t.string   "email"
     t.string   "thumbnail_url"
     t.string   "picture_url"
-    t.string   "full_name"
+    t.string   "display_name"
     t.integer  "person_id"
     t.string   "about"
+  end
+
+  create_table "robots", :force => true do |t|
+    t.string   "name"
+    t.string   "display_name"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "subcategories", :force => true do |t|
@@ -301,9 +362,17 @@ ActiveRecord::Schema.define(:version => 20130924123655) do
     t.datetime "updated_at",    :null => false
   end
 
+  create_table "tesets", :force => true do |t|
+    t.string   "str"
+    t.integer  "int"
+    t.datetime "d"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "users", :force => true do |t|
-    t.string   "email",                  :default => "", :null => false
-    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "email",                  :default => "",    :null => false
+    t.string   "encrypted_password",     :default => "",    :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -317,6 +386,7 @@ ActiveRecord::Schema.define(:version => 20130924123655) do
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
     t.string   "authentication_token"
+    t.boolean  "admin",                  :default => false
   end
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true

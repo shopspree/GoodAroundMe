@@ -71,5 +71,8 @@ module Goodaroundme
 
     # Log
     config.log_level = :debug
+
+    # Bootstrap (Rails 4)
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end

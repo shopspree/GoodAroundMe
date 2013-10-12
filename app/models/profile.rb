@@ -2,15 +2,17 @@ class Profile < ActiveRecord::Base
   belongs_to :person
   belongs_to :address
 
-  attr_accessible :person_id, :address_id, :birthday, :first_name, :gender, :last_name, :middle_name, :name_prefix, :name_suffix, :email, :picture_url, :thumbnail_url, :full_name
+  attr_accessible :person_id, :address_id, :birthday, :first_name, :gender, :last_name, :middle_name, :name_prefix, :name_suffix, :email, :picture_url, :thumbnail_url, :display_name
 
   validates :person_id, presence: true
 
-  before_save :populate_full_name
+  before_save :populate_display_name
 
   scope :search, lambda { |keyword| where('lower(full_name) LIKE ?', "%#{keyword.downcase}%").order(:full_name) }
   scope :search_exact, lambda { |keyword| where(full_name: keyword).order(:full_name) }
 
+
+  public
 
   def first_name
     read_attribute(:first_name).try(:titleize)
@@ -27,8 +29,8 @@ class Profile < ActiveRecord::Base
 
   protected
 
-  def populate_full_name
-    self.full_name = "#{first_name} #{last_name}"
+  def populate_display_name
+    display_name ||= "#{first_name} #{last_name}"
   end
 
 end

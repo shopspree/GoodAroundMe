@@ -46,6 +46,9 @@ gem 'jbuilder'
 gem 'devise' # to authenticate and register users
 gem 'cancan' # to authorize users actions
 gem 'kaminari' # to use paging
+gem 'koala', '~> 1.7.0rc1' # to call facebook
+gem 'bootstrap-sass', git: 'https://github.com/thomas-mcdonald/bootstrap-sass.git' # get bootstrap 3 support
+gem 'delayed_job_active_record' # collectiveidea gem of delayed job
 
 # NewRelic monitoring
 gem 'newrelic_rpm'
