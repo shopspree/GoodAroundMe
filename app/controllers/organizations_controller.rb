@@ -57,6 +57,12 @@ class OrganizationsController < BaseController
     # assign facebook page if found
     @organization.facebook_page.update_attributes(identifier: params["facebook_page"]) if params["facebook_page"]
 
+    # assign organization to categories
+    params[:categories].each do |category|
+      @organization.organization_categories.clear
+      @organization.organization_categories << OrganizationCategory.find(category)
+    end
+
     respond_to do |format|
       if @organization.update_attributes(params[:organization])
         format.html { redirect_to @organization, notice: 'Organization was successfully updated.' }
