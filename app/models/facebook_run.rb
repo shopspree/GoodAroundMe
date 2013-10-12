@@ -11,7 +11,7 @@ class FacebookRun < ActiveRecord::Base
   before_create :start_job
 
   validates_presence_of :facebook_page_id
-  validates_inclusion_of :status, in: STATUSES
+  #validates_inclusion_of :status, in: STATUSES
 
 
   public
@@ -34,8 +34,8 @@ class FacebookRun < ActiveRecord::Base
   protected
 
   def start_job
-    status = FacebookRun::STATUS_STARTED
-    start_time = DateTime.now
-    last_run = FacebookRun.last_run_for_page(facebook_page_id)
+    self.status = FacebookRun::STATUS_STARTED
+    self.start_time = DateTime.now
+    self.last_run = FacebookRun.last_run_for_page(facebook_page_id)
   end
 end
