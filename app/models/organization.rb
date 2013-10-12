@@ -7,7 +7,7 @@ class Organization < ActiveRecord::Base
   has_many :follows, dependent: :destroy
   has_many :followers, through: :follows, source: :person
   has_one :actor, as: :actorable
-  has_one :facebook_page
+  has_one :facebook_page, dependent: :destroy
 
   belongs_to :context
 

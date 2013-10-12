@@ -34,7 +34,7 @@ class FacebookPage < ActiveRecord::Base
 
   def update_from_facebook
     page = FacebookService.new.import_facebook_page(identifier)
-    organization.update_attributes(about: page["about"], website_url: page["website"], image_thumbnail_url: page["picture"])
+    organization.update_attributes(about: page["about"], website_url: page["website"], image_thumbnail_url: page["picture"]["data"]["url"])
   end
 
 end

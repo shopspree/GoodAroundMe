@@ -15,6 +15,16 @@
 </p>
 
 <p>
+  <b>Image:</b>
+  <%= @organization.image_thumbnail_url %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @organization.website_url %>
+</p>
+
+<p>
   <b>Categories:</b>
   <% @organization_categories.each do |category| %>
       <%= check_box_tag category.name, category.id, (@organization.organization_categories.include? category), disabled: true %>
