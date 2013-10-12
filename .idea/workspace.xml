@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tasks/scheduler.rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jobs/facebook_job.rb" afterPath="$PROJECT_DIR$/app/jobs/facebook_job.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/facebook_page.rb" afterPath="$PROJECT_DIR$/app/models/facebook_page.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/facebook_service.rb" afterPath="$PROJECT_DIR$/app/services/facebook_service.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/scheduler.rake" afterPath="$PROJECT_DIR$/lib/tasks/scheduler.rake" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,13 +109,14 @@
     <file path="/20131008232647_remove_orgazniation_category_id_add_organziation_id_to_facebook_page.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381274866311" ignored="false" />
     <file path="/20131009141919_rename_facebook_page_to_facebook_page_id_in_organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381328403081" ignored="false" />
     <file path="/show.html.erb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381425061552" ignored="false" />
-    <file path="/facebook_job.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381423309185" ignored="false" />
+    <file path="/facebook_job.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381606604985" ignored="false" />
     <file path="/20131010133747_add_colums_to_facebook_run.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381412363991" ignored="false" />
     <file path="/20131010135034_rename_page_id_in_facebook_run.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381413127306" ignored="false" />
     <file path="/20131010141150_rename_page_to_identifier_in_facebook_page.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381414333820" ignored="false" />
     <file path="/20131010165227_rename_page_identifier_in_facebook_run.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381423977316" ignored="false" />
     <file path="/import.html.erb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381426268760" ignored="false" />
     <file path="/20131010204639_fix_facebook_post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381438300499" ignored="false" />
+    <file path="/scheduler.rake" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381606625188" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,37 +145,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/base_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="4" column="2" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebook_page.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/facebook_page.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="83" selection-start="355" selection-end="434" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebook_run.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/facebook_run.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="56" selection-start="931" selection-end="931" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,19 +163,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="facebook_page.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/facebook_page.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="104" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+            <state line="24" column="18" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scheduler.rake" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/tasks/scheduler.rake">
+      <file leaf-file-name="facebook_run.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/facebook_run.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="39" column="56" selection-start="931" selection-end="931" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -209,16 +184,43 @@
       <file leaf-file-name="facebook_service.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/facebook_service.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+            <state line="26" column="18" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="method_tracer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/newrelic_rpm-3.6.8.164/lib/new_relic/agent/method_tracer.rb">
+      <file leaf-file-name="facebook_job.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/jobs/facebook_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="260" column="0" selection-start="10610" selection-end="10610" vertical-scroll-proportion="0.0">
+            <state line="5" column="21" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scheduler.rake" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/tasks/scheduler.rake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="19" selection-start="308" selection-end="308" vertical-scroll-proportion="0.1380368">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facebook_post.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/facebook_post.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="104" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -242,8 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/organizations/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/jobs/facebook_job.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131010165227_rename_page_identifier_in_facebook_run.rb" />
         <option value="$PROJECT_DIR$/app/views/organizations/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/organizations/index.html.erb" />
@@ -251,13 +251,15 @@
         <option value="$PROJECT_DIR$/app/views/organizations/import.html.erb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131010204639_fix_facebook_post.rb" />
-        <option value="$PROJECT_DIR$/app/services/facebook_service.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/base_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/organizations_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/facebook_page.rb" />
         <option value="$PROJECT_DIR$/app/models/facebook_run.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/facebook_page.rb" />
+        <option value="$PROJECT_DIR$/app/services/facebook_service.rb" />
+        <option value="$PROJECT_DIR$/app/jobs/facebook_job.rb" />
+        <option value="$PROJECT_DIR$/lib/tasks/scheduler.rake" />
       </list>
     </option>
   </component>
@@ -1033,13 +1035,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1420" height="798" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30494905" sideWeight="0.44079885" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30494905" sideWeight="0.44079885" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55785125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31811696" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1165,16 +1167,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/koala-1.7.0rc1/lib/koala/api/graph_api.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="506" column="0" selection-start="23219" selection-end="23219" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/media.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="1.6014235" />
@@ -1204,30 +1196,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/base_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/facebook_service.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/organizations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="0" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/facebook_page.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="83" selection-start="355" selection-end="434" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1239,16 +1210,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/facebook_run.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="56" selection-start="931" selection-end="931" vertical-scroll-proportion="0.0">
+        <state line="50" column="30" selection-start="1111" selection-end="1136" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/controllers/base_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="30" selection-start="1111" selection-end="1136" vertical-scroll-proportion="0.0">
+        <state line="4" column="2" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1260,9 +1231,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/scheduler.rake">
+    <entry file="file://$PROJECT_DIR$/app/models/facebook_page.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="18" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/facebook_post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/facebook_run.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="56" selection-start="931" selection-end="931" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/facebook_service.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="18" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jobs/facebook_job.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/scheduler.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="308" selection-end="308" vertical-scroll-proportion="0.1380368">
           <folding />
         </state>
       </provider>

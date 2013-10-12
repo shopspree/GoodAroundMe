@@ -24,7 +24,7 @@ class FacebookService
     begin
       page = get_graph.get_object("#{page_identifier}?fields=about,website,picture")
     rescue Koala::Facebook::APIError => exception
-      logger.error("<FacebookService>" + exception.message)
+      Rails.logger.error("<FacebookService>" + exception.message)
     end
   end
 
