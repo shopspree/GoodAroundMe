@@ -14,16 +14,17 @@ class FacebookPage < ActiveRecord::Base
 
   public
 
-  def run_import
+  def run_import(incremental = true)
     facebook_run = facebook_runs.create
     Rails.logger.debug "Import started for for run #{facebook_run} on page #{identifier}"
     begin
-      FacebookService.new.import_facebook_posts(facebook_run)
+      FacebookService.new.import_facebook_posts(facebook_run, incremental)
       facebook_run.end_job
-      Rails.logger.debug "Import completed successfully for run #{facebook_run.id} on page #{identifier}"
+      Rails.logger.debug "Import completed successfully for run #{facebook_run.id} on page #{identifier}" if facebook_run.save
     rescue Exception => e
       Rails.logger.fatal "Import failed for run #{facebook_run.id} on page #{identifier}"
       facebook_run.failed_job
+      facebook_run.save
       raise e
     end
     facebook_run.save

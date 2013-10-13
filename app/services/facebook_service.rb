@@ -3,19 +3,19 @@ class FacebookService
     @graph = get_graph
   end
 
-  def import_facebook_posts(facebook_run)
+  def import_facebook_posts(facebook_run, incremental = true)
     @facebook_page = facebook_run.facebook_page
     @facebook_run = facebook_run
     # query feed
     query = "feed?fields=id,object_id,type,created_time,updated_time"
-    query += "&since=#{facebook_run.last_run.to_i}&until=now" if facebook_run.last_run
+    query += "&since=#{facebook_run.last_run.to_i}&until=now" if (facebook_run.last_run && incremental)
     feed = @graph.get_connections(@facebook_page.identifier, query)
 
     # iterate over feed items
-    feed.each do |post|
-      case post["type"]
+    feed.each do |feed_item|
+      case feed_item["type"]
         when "photo"
-          photo_post(post)
+          photo_post(feed_item)
       end
     end
   end
@@ -61,26 +61,34 @@ class FacebookService
     params
   end
 
-  def photo_post(post)
-      photo = @graph.get_object("#{post["object_id"]}?fields=source,from,created_time,updated_time")
+  def photo_post(feed_item)
+      photo = @graph.get_object("#{feed_item["object_id"]}?fields=source,from,created_time,updated_time")
       params = post_params(photo)
 
-      facebook_post = FacebookPost.find_or_initialize_by_facebook_object_id(post["object_id"])
+      facebook_post = FacebookPost.find_or_initialize_by_facebook_object_id(feed_item["object_id"])
       post = if facebook_post.new_record?
+               puts "!!!!!!NEW!!!!!!! or params #{params}"
                actor = @facebook_page.organization.actor
-               actor.posts.create(params[:post])
-             elsif facebook_post.updated_time != post["updated_time"]
+               facebook_post.post = actor.posts.create(params[:post])
+             elsif facebook_post.facebook_updated_at != feed_item["updated_time"]
+               puts "!!!!!!UPDATED!!!!!!! or params #{params}"
                facebook_post.post.update_attributes(title: params[:post][:title], caption: params[:post][:caption], medias_attributes: params[:post][:medias_attributes])
+               facebook_post.post
              end
       actor = facebook_service_actor
       post.update_attributes(contributor_id: actor.id)
 
-      facebook_post.facebook_id = post["id"]
-      facebook_post.facebook_type = post["type"]
-      facebook_post.facebook_created_at = post["created_at"]
-      facebook_post.facebook_updated_at = post["updated_at"]
+      facebook_post.facebook_id = feed_item["id"]
+      facebook_post.facebook_type = feed_item["type"]
+      facebook_post.facebook_created_at = photo["created_time"]
+      facebook_post.facebook_updated_at = photo["updated_time"]
       facebook_post.facebook_run_id =  @facebook_run.id
-      facebook_post.save
+
+      if facebook_post.save
+        Rails.logger.debug "FacebookPost #{facebook_post.id} created successfully"
+      else
+        Rails.logger.error "FacebookPost for post #{post.id} failed to save"
+      end
   end
 
 end

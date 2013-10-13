@@ -21,13 +21,13 @@ class FacebookRun < ActiveRecord::Base
   end
 
   def end_job
-    status = FacebookRun::STATUS_COMPLETED
-    end_time = DateTime.now
+    self.status = FacebookRun::STATUS_COMPLETED
+    self.end_time = DateTime.now
   end
 
   def failed_job
-    status = FacebookRun::STATUS_FAILED
-    end_time = DateTime.now
+    self.status = FacebookRun::STATUS_FAILED
+    self.end_time = DateTime.now
   end
 
 
