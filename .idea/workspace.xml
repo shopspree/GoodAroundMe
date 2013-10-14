@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3-journal" afterPath="$PROJECT_DIR$/db/development.sqlite3-journal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/facebook_page.rb" afterPath="$PROJECT_DIR$/app/models/facebook_page.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/facebook_post.rb" afterPath="$PROJECT_DIR$/app/models/facebook_post.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/facebook_run.rb" afterPath="$PROJECT_DIR$/app/models/facebook_run.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/facebook_service.rb" afterPath="$PROJECT_DIR$/app/services/facebook_service.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/development.sqlite3-journal" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/profile.rb" afterPath="$PROJECT_DIR$/app/models/profile.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +19,7 @@
     <file path="/application.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381250597263" ignored="false" />
     <file path="/person_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377438895850" ignored="false" />
     <file path="/context.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375835173229" ignored="false" />
-    <file path="/profile.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381175490914" ignored="false" />
+    <file path="/profile.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381752746863" ignored="false" />
     <file path="/organization_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375836612437" ignored="false" />
     <file path="/organization_categories_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377538834483" ignored="false" />
     <file path="/index.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379662897703" ignored="false" />
@@ -182,10 +179,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_service.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="facebook_service.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/facebook_service.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="61" selection-start="2971" selection-end="2971" vertical-scroll-proportion="0.7258065">
+            <state line="83" column="61" selection-start="2971" selection-end="2971" vertical-scroll-proportion="-13.846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_post.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="19" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="54" selection-start="817" selection-end="863" vertical-scroll-proportion="0.6993988">
               <folding />
             </state>
           </provider>
@@ -209,7 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/base_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/jobs/facebook_job.rb" />
@@ -225,6 +248,7 @@
         <option value="$PROJECT_DIR$/app/models/facebook_page.rb" />
         <option value="$PROJECT_DIR$/app/models/facebook_post.rb" />
         <option value="$PROJECT_DIR$/app/services/facebook_service.rb" />
+        <option value="$PROJECT_DIR$/app/models/profile.rb" />
       </list>
     </option>
   </component>
@@ -1201,27 +1225,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/organizations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="49" selection-start="1616" selection-end="1616" vertical-scroll-proportion="-5.3076925">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="29" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
@@ -1246,13 +1249,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/user_observer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="69" selection-start="161" selection-end="214" vertical-scroll-proportion="0.29069766">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="54" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1308,7 +1304,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/facebook_service.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="61" selection-start="2971" selection-end="2971" vertical-scroll-proportion="0.7258065">
+        <state line="83" column="61" selection-start="2971" selection-end="2971" vertical-scroll-proportion="-13.846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="54" selection-start="817" selection-end="863" vertical-scroll-proportion="0.6993988">
           <folding />
         </state>
       </provider>

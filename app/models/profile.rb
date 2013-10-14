@@ -30,7 +30,7 @@ class Profile < ActiveRecord::Base
   protected
 
   def populate_display_name
-    display_name ||= "#{first_name} #{last_name}"
+    self.display_name ||= "#{first_name} #{last_name}"
   end
 
 end
