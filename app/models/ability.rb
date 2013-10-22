@@ -44,8 +44,8 @@ class Ability
         person.orgnization # can create post if is assigned to an organization
       end
       can [:update, :destroy], Post do |post|
-        logger.info("<Ability> Destroy post: \n#{post.inspect} \nBy person: #{person.inspect} \nOf organization: #{person.organization.actor.id}")
-        person.organization && post.actor_id == person.organization.actor.id # can update or destroy post on organization they are assigned
+        Rails::Logger.info("<Ability> Destroy post: \n#{post.inspect} \nBy person: #{person.inspect} \nOf organization: #{person.organization.actor.id}")
+        (person.organization && post.actor_id == person.organization.actor.id) # can update or destroy post on organization they are assigned
       end
       can [:read, :popular], Post # anyone can read posts
 
@@ -71,7 +71,7 @@ class Ability
       can [:read, :following], User
       can [:update, :update_password], User, id: user.id
 
-      #Organization
+      # Organization
       can [:read, :follow, :unfollow, :followers], Organization
       can [:create], Organization do |organization|
         person.operator && person.organization.nil?
@@ -84,7 +84,10 @@ class Ability
       can [:read],   OrganizationCategory
 
       # Problem
-      can [:create], Problem
+      can [:create], Problem # anyone can report a problem
+
+      # Dictionary
+      can [:read], Dictionary #anyone (authenticated) can inquire the application dictionary
 
       # Mention
       #can [:create, :read], Mention do |mention|

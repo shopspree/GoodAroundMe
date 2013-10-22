@@ -1,8 +1,8 @@
 class Media < ActiveRecord::Base
   belongs_to :post
-  belongs_to :media_type
+  belongs_to :mediable, polymorphic: true
 
-  attr_accessible :media_type_id, :post_id, :url_string
+  attr_accessible :mediable_id, :mediable_type, :post_id
 
   before_create :default_values
 

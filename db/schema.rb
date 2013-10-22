@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131010204639) do
+ActiveRecord::Schema.define(:version => 20131022154308) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -214,6 +214,8 @@ ActiveRecord::Schema.define(:version => 20131010204639) do
     t.integer  "media_type_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.integer  "mediable_id"
+    t.string   "mediable_type"
   end
 
   create_table "media_types", :force => true do |t|
@@ -286,6 +288,12 @@ ActiveRecord::Schema.define(:version => 20131010204639) do
     t.integer  "context_id"
     t.integer  "user_id"
     t.integer  "followings_count", :default => 0
+  end
+
+  create_table "photos", :force => true do |t|
+    t.string   "url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "post_subcategories", :force => true do |t|
@@ -393,5 +401,12 @@ ActiveRecord::Schema.define(:version => 20131010204639) do
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "videos", :force => true do |t|
+    t.string   "url"
+    t.string   "image_url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end
