@@ -14,7 +14,7 @@ class FacebookService
     # iterate over feed items
     feed.each do |feed_item|
       case feed_item["type"]
-        when "photo"
+        when "photos"
           photo_post(feed_item)
       end
     end
