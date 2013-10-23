@@ -23,7 +23,7 @@ class Api::V1::PostsController < Api::V1::BaseController
                  elsif params[:video]
                    Video.create(params[:video])
                  end
-      @post.medias.create.mediable = mediable
+      mediable.media = @post.medias.create
 
       @user = current_user
 
