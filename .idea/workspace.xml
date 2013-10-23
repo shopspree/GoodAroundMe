@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/media.rb" afterPath="$PROJECT_DIR$/app/models/media.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382106003384" ignored="false" />
     <file path="/sessions_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376140355970" ignored="false" />
-    <file path="/fragment.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382554370027" ignored="false" />
+    <file path="/fragment.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382556311162" ignored="false" />
     <file path="/registrations_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376666801302" ignored="false" />
     <file path="/user.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381595894589" ignored="false" />
     <file path="/user_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376486782908" ignored="false" />
@@ -55,8 +56,8 @@
     <file path="/operator_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377503992618" ignored="false" />
     <file path="/20130826094111_operator_organization_id_to_integer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377510104015" ignored="false" />
     <file path="/base_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381426052719" ignored="false" />
-    <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382553833977" ignored="false" />
-    <file path="/media.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382540692648" ignored="false" />
+    <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382556419108" ignored="false" />
+    <file path="/media.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382554917419" ignored="false" />
     <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379590000380" ignored="false" />
     <file path="/_comment.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379594274132" ignored="false" />
     <file path="/_like.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377681596898" ignored="false" />
@@ -142,7 +143,7 @@
       <file leaf-file-name="media.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/media.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="62" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+            <state line="6" column="24" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,15 +167,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photo.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/photo.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="30" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_post.json.jbuilder" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
@@ -184,10 +176,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="7" selection-start="387" selection-end="387" vertical-scroll-proportion="0.2936508">
+            <state line="25" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="-4.8461537">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="association.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/associations/association.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.33248082">
               <folding />
             </state>
           </provider>
@@ -251,8 +252,8 @@
         <option value="$PROJECT_DIR$/app/views/api/v1/video/_video.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/photo/_photo.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/models/media.rb" />
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
+        <option value="$PROJECT_DIR$/app/models/media.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
       </list>
     </option>
@@ -1239,30 +1240,14 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb</url>
-          <line>17</line>
-          <option name="timeStamp" value="70" />
+          <line>18</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="71" />
+      <option name="time" value="72" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1382406398000" expanded="true" signature="-1:-1" placeholder=" ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/follow.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/organizations/followers.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="39" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
@@ -1312,13 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/media.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="62" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/create.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1347,16 +1325,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/associations/collection_association.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/media.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="24" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="928" selection-end="928" vertical-scroll-proportion="0.4059406">
+        <state line="30" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="1.1138614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="387" selection-end="387" vertical-scroll-proportion="0.2936508">
+        <state line="25" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="-4.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/associations/association.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.33248082">
           <folding />
         </state>
       </provider>

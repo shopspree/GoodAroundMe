@@ -18,6 +18,13 @@ class Api::V1::PostsController < Api::V1::BaseController
     if current_person.organization
       @post = current_person.organization.actor.posts.new(params[:post])
       @post.contributor_id = current_actor.id
+      mediable = if params[:photo]
+                   Photo.new(params[:photo])
+                 elsif params[:video]
+                   Video.new(params[:video])
+                 end
+      @post.medias.new.mediable = mediable
+
       @user = current_user
 
       respond_with @post.errors, status: :unprocessable_entity unless @post.save
