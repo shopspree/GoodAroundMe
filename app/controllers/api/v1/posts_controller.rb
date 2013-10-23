@@ -16,17 +16,17 @@ class Api::V1::PostsController < Api::V1::BaseController
   # POST /api/v1/posts.json
   def create
     if current_person.organization
-      @post = current_person.organization.actor.posts.new(params[:post])
+      @post = current_person.organization.actor.posts.create(params[:post])
       @post.contributor_id = current_actor.id
       mediable = if params[:photo]
-                   Photo.new(params[:photo])
+                   Photo.create(params[:photo])
                  elsif params[:video]
-                   Video.new(params[:video])
+                   Video.create(params[:video])
                  end
-      @post.medias.new.mediable = mediable
+      @post.medias.create.mediable = mediable
 
       @user = current_user
-      logger.debug "[DEBUG] Post: #{@post.inspect} \n[DEBUG] Medias: #{@post.medias} \n[DEBUG] Mediable: #{@post.medias.first.mediable.inspect} \n"
+
       respond_with @post.errors, status: :unprocessable_entity unless @post.save
     end
   end
