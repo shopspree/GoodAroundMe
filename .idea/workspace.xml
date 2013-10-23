@@ -54,7 +54,7 @@
     <file path="/operator_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377503992618" ignored="false" />
     <file path="/20130826094111_operator_organization_id_to_integer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377510104015" ignored="false" />
     <file path="/base_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381426052719" ignored="false" />
-    <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382557253230" ignored="false" />
+    <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382557608583" ignored="false" />
     <file path="/media.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382554917419" ignored="false" />
     <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379590000380" ignored="false" />
     <file path="/_comment.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379594274132" ignored="false" />
@@ -177,7 +177,7 @@
       <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="99" selection-start="888" selection-end="888" vertical-scroll-proportion="0.45238096">
+            <state line="28" column="76" selection-start="865" selection-end="865" vertical-scroll-proportion="0.6507937">
               <folding />
             </state>
           </provider>
@@ -1344,7 +1344,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="99" selection-start="888" selection-end="888" vertical-scroll-proportion="0.45238096">
+        <state line="28" column="76" selection-start="865" selection-end="865" vertical-scroll-proportion="0.6507937">
           <folding />
         </state>
       </provider>
