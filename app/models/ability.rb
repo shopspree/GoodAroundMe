@@ -86,9 +86,6 @@ class Ability
       # Problem
       can [:create], Problem # anyone can report a problem
 
-      # Dictionary
-      can [:read], Dictionary #anyone (authenticated) can inquire the application dictionary
-
       # Mention
       #can [:create, :read], Mention do |mention|
       #  can_actor_read_post? actor, mention.post # can create/read mention on post they can read
