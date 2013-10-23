@@ -16,9 +16,9 @@ class Post < ActiveRecord::Base
   belongs_to :actor, counter_cache: true
   belongs_to :contributor, class_name: "Actor"
 
-  accepts_nested_attributes_for :medias
+  #accepts_nested_attributes_for :medias
 
-  attr_accessible :actor_id, :contributor_id, :comments_count, :likes_count, :title, :caption, :medias_attributes, :inappropriate_reports_count, :post_subcategories_count
+  attr_accessible :actor_id, :contributor_id, :comments_count, :likes_count, :title, :caption, :inappropriate_reports_count, :post_subcategories_count
 
   scope :popular, lambda { where("created_at > ?", 60.days.ago) }
 
