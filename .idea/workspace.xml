@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/media.rb" afterPath="$PROJECT_DIR$/app/models/media.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +54,7 @@
     <file path="/operator_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377503992618" ignored="false" />
     <file path="/20130826094111_operator_organization_id_to_integer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377510104015" ignored="false" />
     <file path="/base_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381426052719" ignored="false" />
-    <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382556419108" ignored="false" />
+    <file path="/posts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382557253230" ignored="false" />
     <file path="/media.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382554917419" ignored="false" />
     <file path="/likes_helper.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379590000380" ignored="false" />
     <file path="/_comment.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1379594274132" ignored="false" />
@@ -176,19 +174,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="-4.8461537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="association.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/associations/association.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.33248082">
+            <state line="28" column="99" selection-start="888" selection-end="888" vertical-scroll-proportion="0.45238096">
               <folding />
             </state>
           </provider>
@@ -1346,16 +1335,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/associations/association.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="-4.8461537">
+        <state line="25" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.33248082">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/associations/association.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.33248082">
+        <state line="28" column="99" selection-start="888" selection-end="888" vertical-scroll-proportion="0.45238096">
           <folding />
         </state>
       </provider>

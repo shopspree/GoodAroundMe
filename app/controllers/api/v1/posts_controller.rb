@@ -26,7 +26,7 @@ class Api::V1::PostsController < Api::V1::BaseController
       @post.medias.new.mediable = mediable
 
       @user = current_user
-
+      logger.debug "Post #{post.id} \nMedias #{post.medias} \nMediable #{post.medias.first.mediable}"
       respond_with @post.errors, status: :unprocessable_entity unless @post.save
     end
   end
