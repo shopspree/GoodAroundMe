@@ -6,6 +6,7 @@ class Api::V1::MetadataController < API::V1::BaseController
     @amazon_s3_app_id = ENV["AMAZON_S3_APP_ID"]
     @amazon_s3_app_secret = ENV["AMAZON_S3_APP_SECRET"]
 
+    @give_enable = false
     @give_url = 'http://www.goodaround.me'
 
     @image_size_bytes_threshold = 100000

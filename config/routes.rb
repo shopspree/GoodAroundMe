@@ -10,6 +10,8 @@ Goodaroundme::Application.routes.draw do
   # (web front)
   resources :organizations
 
+  get 'about', to: 'abouts#index'
+
   # /api/*
   namespace :api do
 
@@ -83,6 +85,11 @@ Goodaroundme::Application.routes.draw do
 
       # /facebook
       get 'facebook/callback'
+
+      # /metadata
+      get 'metadata', to: 'metadata#index'
+
+
 
     end
   end
