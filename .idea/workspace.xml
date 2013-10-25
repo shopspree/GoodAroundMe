@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/api/v1/metadata/_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/api/v1/metadata/edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/api/v1/metadata/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/api/v1/metadata/new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/api/v1/metadata/show.html.erb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/metadata/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/metadata/index.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +23,8 @@
     <file path="/profile.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381752746863" ignored="false" />
     <file path="/organization_observer.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1375836612437" ignored="false" />
     <file path="/organization_categories_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377538834483" ignored="false" />
-    <file path="/index.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382726507779" ignored="false" />
-    <file path="/routes.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381425189459" ignored="false" />
+    <file path="/index.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382726682814" ignored="false" />
+    <file path="/routes.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382730864193" ignored="false" />
     <file path="/create.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378480965591" ignored="false" />
     <file path="/_user.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381145938429" ignored="false" />
     <file path="/_organization_category.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1376776007986" ignored="false" />
@@ -70,7 +65,7 @@
     <file path="/comments_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377936829947" ignored="false" />
     <file path="/destroy.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377935477096" ignored="false" />
     <file path="/20130901100132_change_about_in_organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378029721916" ignored="false" />
-    <file path="/metadata_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382726429407" ignored="false" />
+    <file path="/metadata_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382726671775" ignored="false" />
     <file path="/applications_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378633264541" ignored="false" />
     <file path="/actor.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381616400384" ignored="false" />
     <file path="/20130908095218_add_posts_count_to_actor.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378634033671" ignored="false" />
@@ -107,7 +102,7 @@
     <file path="/20131007095629_create_facebook_pages.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381186328211" ignored="false" />
     <file path="/20131008133759_add_admin_to_user.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381239490732" ignored="false" />
     <file path="/_form.html.erb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381610089352" ignored="false" />
-    <file path="/index.html.erb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381424736817" ignored="false" />
+    <file path="/index.html.erb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382727801787" ignored="false" />
     <file path="/application.html.erb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381265106001" ignored="false" />
     <file path="/custom.css.scss" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381358555716" ignored="false" />
     <file path="/20131008232647_remove_orgazniation_category_id_add_organziation_id_to_facebook_page.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381274866311" ignored="false" />
@@ -163,10 +158,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="metadata_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="metadata_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="45" selection-start="108" selection-end="293" vertical-scroll-proportion="0.18404908">
+            <state line="8" column="16" selection-start="213" selection-end="225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,7 +170,25 @@
       <file leaf-file-name="index.json.jbuilder" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/api/v1/metadata/index.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+            <state line="4" column="21" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/abouts/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="28" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="35" selection-start="2555" selection-end="2555" vertical-scroll-proportion="0.38967136">
               <folding />
             </state>
           </provider>
@@ -217,24 +230,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="3" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="video.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/video.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="42" selection-start="101" selection-end="109" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -253,8 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/facebook_post.rb" />
-        <option value="$PROJECT_DIR$/app/services/facebook_service.rb" />
         <option value="$PROJECT_DIR$/app/models/profile.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/organizations/followers.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/models/video.rb" />
@@ -269,6 +262,8 @@
         <option value="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/metadata/index.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/abouts/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -438,18 +433,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="videos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -469,131 +452,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goodaroundme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goodaroundme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goodaroundme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goodaroundme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goodaroundme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goodaroundme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metadata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goodaroundme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goodaroundme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activities" />
+              <option name="myItemId" value="abouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1314,27 +1173,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/associations/collection_association.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-3.2.13/lib/active_record/associations/association.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.33248082">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/create.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="3" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0">
@@ -1412,16 +1250,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/metadata/index.json.jbuilder">
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+        <state line="8" column="16" selection-start="213" selection-end="225" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/metadata/index.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="45" selection-start="108" selection-end="293" vertical-scroll-proportion="0.18404908">
+        <state line="4" column="21" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="101" selection-end="109" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/abouts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="28" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="35" selection-start="2555" selection-end="2555" vertical-scroll-proportion="0.38967136">
           <folding />
         </state>
       </provider>
