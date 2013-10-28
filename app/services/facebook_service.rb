@@ -12,6 +12,7 @@ class FacebookService
     feed = @graph.get_connections(@facebook_page.identifier, query)
 
     # iterate over feed items
+    Rails.logger.info "Facebook SDK for query \n#{query} returned #{feed.length} results"
     feed.each do |feed_item|
       case feed_item["type"]
         when "photos"
@@ -67,11 +68,9 @@ class FacebookService
 
       facebook_post = FacebookPost.find_or_initialize_by_facebook_object_id(feed_item["object_id"])
       post = if facebook_post.new_record?
-               puts "!!!!!!NEW!!!!!!! or params #{params}"
                actor = @facebook_page.organization.actor
                facebook_post.post = actor.posts.create(params[:post])
              elsif facebook_post.facebook_updated_at != feed_item["updated_time"]
-               puts "!!!!!!UPDATED!!!!!!! or params #{params}"
                facebook_post.post.update_attributes(title: params[:post][:title], caption: params[:post][:caption], medias_attributes: params[:post][:medias_attributes])
                facebook_post.post
              end
