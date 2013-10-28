@@ -10,6 +10,7 @@ class Post < ActiveRecord::Base
   has_many :post_subcategories, dependent: :destroy
   has_many :subcategories, through: :post_subcategories
   has_many :notifications, as: :notificationable, dependent: :destroy
+  has_many :facebook_posts, dependent:  :destroy
   has_one :activity, as: :timelineable, dependent: :destroy
   has_one :audience, as: :audienceable, dependent: :destroy
 

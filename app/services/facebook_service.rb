@@ -58,6 +58,7 @@ class FacebookService
                               "Posted on facebook"
                             end
     params[:post][:caption] = photo["from"]["name"]
+    params[:photo] = Hash.new
     params[:photo][:url] = photo["source"]
     params
   end
