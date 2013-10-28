@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/mobile.html.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/abouts/_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/abouts/edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/abouts/new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/abouts/show.html.erb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/api/v1/metadata/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/metadatas/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/abouts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/abouts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="" />
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382106003384" ignored="false" />
@@ -130,6 +119,7 @@
     <file path="/_video.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382477526632" ignored="false" />
     <file path="/abouts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382735254853" ignored="false" />
     <file path="/20131028202517_change_facebook_run_id_in_facebook_post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382991954138" ignored="false" />
+    <file path="/20131028203103_change_facebook_run_id_in_facebook_post2.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382992443416" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,10 +166,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131028202517_change_facebook_run_id_in_facebook_post.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20131028202517_change_facebook_run_id_in_facebook_post.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131028202517_change_facebook_run_id_in_facebook_post.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="60" selection-start="215" selection-end="215" vertical-scroll-proportion="0.14308426">
+            <state line="6" column="60" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131028203103_change_facebook_run_id_in_facebook_post2.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131028203103_change_facebook_run_id_in_facebook_post2.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="97" selection-start="293" selection-end="293" vertical-scroll-proportion="0.14308426">
               <folding />
             </state>
           </provider>
@@ -230,15 +229,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="organizations_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/organizations_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -257,7 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20131022154308_update_media.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/video/_video.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/photo/_photo.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
@@ -273,6 +262,7 @@
         <option value="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/metadata/index.json.jbuilder" />
         <option value="$PROJECT_DIR$/db/migrate/20131028202517_change_facebook_run_id_in_facebook_post.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131028203103_change_facebook_run_id_in_facebook_post2.rb" />
       </list>
     </option>
   </component>
@@ -1197,20 +1187,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/abouts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1304,7 +1280,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131028202517_change_facebook_run_id_in_facebook_post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="60" selection-start="215" selection-end="215" vertical-scroll-proportion="0.14308426">
+        <state line="6" column="60" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/organizations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131028203103_change_facebook_run_id_in_facebook_post2.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="97" selection-start="293" selection-end="293" vertical-scroll-proportion="0.14308426">
           <folding />
         </state>
       </provider>
