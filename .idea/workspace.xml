@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="" />
+    <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131028202517_change_facebook_run_id_in_facebook_post.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131006221600_create_facebook_posts.rb" afterPath="$PROJECT_DIR$/db/migrate/20131006221600_create_facebook_posts.rb" />
+    </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382106003384" ignored="false" />
@@ -94,7 +97,7 @@
     <file path="/_person.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381172632019" ignored="false" />
     <file path="/_robot.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381172739037" ignored="false" />
     <file path="/20131007172544_create_robots.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381176290889" ignored="false" />
-    <file path="/20131006221600_create_facebook_posts.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381238459892" ignored="false" />
+    <file path="/20131006221600_create_facebook_posts.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382992604517" ignored="false" />
     <file path="/20131007095629_create_facebook_pages.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381186328211" ignored="false" />
     <file path="/20131008133759_add_admin_to_user.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381239490732" ignored="false" />
     <file path="/_form.html.erb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381610089352" ignored="false" />
@@ -166,19 +169,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131028202517_change_facebook_run_id_in_facebook_post.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131028202517_change_facebook_run_id_in_facebook_post.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="60" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="20131028203103_change_facebook_run_id_in_facebook_post2.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131028203103_change_facebook_run_id_in_facebook_post2.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="97" selection-start="293" selection-end="293" vertical-scroll-proportion="0.14308426">
+            <state line="6" column="97" selection-start="293" selection-end="293" vertical-scroll-proportion="0.1380368">
               <folding />
             </state>
           </provider>
@@ -247,7 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/api/v1/video/_video.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/photo/_photo.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
@@ -263,6 +256,7 @@
         <option value="$PROJECT_DIR$/app/views/api/v1/metadata/index.json.jbuilder" />
         <option value="$PROJECT_DIR$/db/migrate/20131028202517_change_facebook_run_id_in_facebook_post.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131028203103_change_facebook_run_id_in_facebook_post2.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131006221600_create_facebook_posts.rb" />
       </list>
     </option>
   </component>
@@ -1278,13 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131028202517_change_facebook_run_id_in_facebook_post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="60" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/organizations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1292,9 +1279,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131006221600_create_facebook_posts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="15" selection-start="120" selection-end="120" vertical-scroll-proportion="0.07154213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131028203103_change_facebook_run_id_in_facebook_post2.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="97" selection-start="293" selection-end="293" vertical-scroll-proportion="0.14308426">
+        <state line="6" column="97" selection-start="293" selection-end="293" vertical-scroll-proportion="0.1380368">
           <folding />
         </state>
       </provider>

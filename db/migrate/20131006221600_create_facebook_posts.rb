@@ -1,7 +1,7 @@
 class CreateFacebookPosts < ActiveRecord::Migration
   def change
     create_table :facebook_posts do |t|
-      t.string :facebook_run_id
+      t.integer :facebook_run_id
       t.integer :post_id
       t.string :facebook_type
       t.string :facebook_object_id
