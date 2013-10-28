@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/facebook_post.rb" afterPath="$PROJECT_DIR$/app/models/facebook_post.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/facebook_service.rb" afterPath="$PROJECT_DIR$/app/services/facebook_service.rb" />
     </list>
     <ignored path="goodaroundme.iws" />
@@ -86,7 +85,7 @@
     <file path="/callback.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1380988409105" ignored="false" />
     <file path="/facebook_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381044527765" ignored="false" />
     <file path="/callback.html.erb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1380989959407" ignored="false" />
-    <file path="/facebook_service.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382994385455" ignored="false" />
+    <file path="/facebook_service.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382994719333" ignored="false" />
     <file path="/external_organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381139824745" ignored="false" />
     <file path="/facebook_page.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382993816496" ignored="false" />
     <file path="/20131006221042_create_facebook_runs.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381139959381" ignored="false" />
@@ -178,19 +177,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_service.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="facebook_service.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/facebook_service.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="34" selection-start="3326" selection-end="3326" vertical-scroll-proportion="0.0">
+            <state line="17" column="19" selection-start="682" selection-end="682" vertical-scroll-proportion="0.29577464">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_post.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="facebook_post.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/facebook_post.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="3" selection-start="236" selection-end="236" vertical-scroll-proportion="0.16431925">
+            <state line="7" column="3" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -255,8 +254,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20131006221600_create_facebook_posts.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/facebook_page.rb" />
-        <option value="$PROJECT_DIR$/app/services/facebook_service.rb" />
         <option value="$PROJECT_DIR$/app/models/facebook_post.rb" />
+        <option value="$PROJECT_DIR$/app/services/facebook_service.rb" />
       </list>
     </option>
   </component>
@@ -1176,7 +1175,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/services/facebook_service.rb</url>
-          <line>68</line>
+          <line>70</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
@@ -1307,16 +1306,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/facebook_service.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/facebook_post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="34" selection-start="3326" selection-end="3326" vertical-scroll-proportion="0.0">
+        <state line="7" column="3" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/facebook_post.rb">
+    <entry file="file://$PROJECT_DIR$/app/services/facebook_service.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="236" selection-end="236" vertical-scroll-proportion="0.16431925">
+        <state line="17" column="19" selection-start="682" selection-end="682" vertical-scroll-proportion="0.29577464">
           <folding />
         </state>
       </provider>
