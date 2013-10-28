@@ -58,7 +58,7 @@ class FacebookService
                               "Posted on facebook"
                             end
     params[:post][:caption] = photo["from"]["name"]
-    params[:post][:medias_attributes] = [{url_string: photo["source"]}]
+    params[:photo][:url] = photo["source"]
     params
   end
 
@@ -73,11 +73,18 @@ class FacebookService
              Rails.logger.info "[INFO] Create new FacebookPost record"
              actor = @facebook_page.organization.actor
              facebook_post.post = actor.posts.create(params[:post])
+
+             facebook_post.post
            elsif facebook_post.facebook_updated_at != feed_item["updated_time"]
              Rails.logger.info "[INFO] Update existing FacebookPost record"
-             facebook_post.post.update_attributes(title: params[:post][:title], caption: params[:post][:caption], medias_attributes: params[:post][:medias_attributes])
+             facebook_post.post.update_attributes(title: params[:post][:title], caption: params[:post][:caption])
+             post.medias.destroy
              facebook_post.post
            end
+
+    mediable = Photo.create(params[:photo])
+    mediable.media = post.medias.create
+
     actor = facebook_service_actor
     post.update_attributes(contributor_id: actor.id)
 
