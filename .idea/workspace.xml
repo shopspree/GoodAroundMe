@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131028202517_change_facebook_run_id_in_facebook_post.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131006221600_create_facebook_posts.rb" afterPath="$PROJECT_DIR$/db/migrate/20131006221600_create_facebook_posts.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131028203103_change_facebook_run_id_in_facebook_post2.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,7 +65,7 @@
     <file path="/comments_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377936829947" ignored="false" />
     <file path="/destroy.json.jbuilder" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1377935477096" ignored="false" />
     <file path="/20130901100132_change_about_in_organization.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378029721916" ignored="false" />
-    <file path="/metadata_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382736103704" ignored="false" />
+    <file path="/metadata_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382992795740" ignored="false" />
     <file path="/applications_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378633264541" ignored="false" />
     <file path="/actor.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1381616400384" ignored="false" />
     <file path="/20130908095218_add_posts_count_to_actor.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1378634033671" ignored="false" />
@@ -142,10 +143,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="metadata_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="metadata_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="22" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+            <state line="0" column="59" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,15 +165,6 @@
         <entry file="file://$PROJECT_DIR$/app/models/facebook_post.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131028203103_change_facebook_run_id_in_facebook_post2.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131028203103_change_facebook_run_id_in_facebook_post2.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="97" selection-start="293" selection-end="293" vertical-scroll-proportion="0.1380368">
               <folding />
             </state>
           </provider>
@@ -252,11 +244,11 @@
         <option value="$PROJECT_DIR$/app/controllers/base_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/mobile.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/abouts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/metadata/index.json.jbuilder" />
         <option value="$PROJECT_DIR$/db/migrate/20131028202517_change_facebook_run_id_in_facebook_post.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131028203103_change_facebook_run_id_in_facebook_post2.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131006221600_create_facebook_posts.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb" />
       </list>
     </option>
   </component>
@@ -1237,13 +1229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/facebook_run.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1286,9 +1271,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131028203103_change_facebook_run_id_in_facebook_post2.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="97" selection-start="293" selection-end="293" vertical-scroll-proportion="0.1380368">
+        <state line="0" column="59" selection-start="36" selection-end="59" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/metadata_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="59" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

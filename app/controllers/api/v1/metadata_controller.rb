@@ -1,4 +1,4 @@
-class Api::V1::MetadataController < API::V1::BaseController
+class Api::V1::MetadataController < Api::V1::BaseController
 
   # GET /api/v1/metadatas.json
   def index
