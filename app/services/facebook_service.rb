@@ -12,7 +12,7 @@ class FacebookService
     feed = @graph.get_connections(@facebook_page.identifier, query)
 
     # iterate over feed items
-    Rails.logger.info "Facebook SDK for query \n#{query} returned #{feed.length} results"
+    Rails.logger.info "[INFO] Facebook SDK for query \n\t#{query} \n\treturned #{feed.length} results"
     feed.each do |feed_item|
       case feed_item["type"]
         when "photos"
@@ -70,9 +70,11 @@ class FacebookService
       post = if facebook_post.new_record?
                actor = @facebook_page.organization.actor
                facebook_post.post = actor.posts.create(params[:post])
+               Rails.logger.info "[INFO] Create new FacebookPost record"
              elsif facebook_post.facebook_updated_at != feed_item["updated_time"]
                facebook_post.post.update_attributes(title: params[:post][:title], caption: params[:post][:caption], medias_attributes: params[:post][:medias_attributes])
                facebook_post.post
+               Rails.logger.info "[INFO] Update existing FacebookPost record"
              end
       actor = facebook_service_actor
       post.update_attributes(contributor_id: actor.id)
@@ -84,9 +86,9 @@ class FacebookService
       facebook_post.facebook_run_id =  @facebook_run.id
 
       if facebook_post.save
-        Rails.logger.debug "FacebookPost #{facebook_post.id} created successfully"
+        Rails.logger.info "[INFO] FacebookPost #{facebook_post.id} created successfully"
       else
-        Rails.logger.error "FacebookPost for post #{post.id} failed to save"
+        Rails.logger.error "[ERROR] FacebookPost for post #{post.id} failed to save"
       end
   end
 
