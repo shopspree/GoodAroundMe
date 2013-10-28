@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131022154308) do
+ActiveRecord::Schema.define(:version => 20131028202517) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -130,15 +130,15 @@ ActiveRecord::Schema.define(:version => 20131022154308) do
   end
 
   create_table "facebook_posts", :force => true do |t|
-    t.string   "facebook_run_id"
+    t.integer  "facebook_run_id",     :limit => 255
     t.integer  "post_id"
     t.string   "facebook_type"
     t.string   "facebook_object_id"
     t.string   "facebook_id"
     t.datetime "facebook_created_at"
     t.datetime "facebook_updated_at"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
   end
 
   create_table "facebook_runs", :force => true do |t|
