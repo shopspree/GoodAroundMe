@@ -5,5 +5,7 @@ json.metadata do |json|
   json.give_enabled @give_enable
   json.give_url @give_url
 
+  json.about_url @about_url
+
   json.image_size_bytes_threshold @image_size_bytes_threshold
 end

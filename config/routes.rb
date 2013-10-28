@@ -1,8 +1,5 @@
 Goodaroundme::Application.routes.draw do
 
-  resources :tesets
-
-
   # devise
   devise_for :users, constraints: { format: :html }
   devise_for :users, controllers: { sessions: "api/v1/sessions", registrations: "api/v1/registrations" }, constraints: { format: :json}
@@ -86,8 +83,8 @@ Goodaroundme::Application.routes.draw do
       # /facebook
       get 'facebook/callback'
 
-      # /metadata
-      get 'metadata', to: 'metadata#index'
+      # /metadatas
+      get 'metadatas', to: 'metadatas#index'
 
 
 
