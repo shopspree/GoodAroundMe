@@ -70,13 +70,13 @@ class FacebookService
 
     facebook_post = FacebookPost.find_or_initialize_by_facebook_object_id(feed_item["object_id"])
     post = if facebook_post.new_record?
-               actor = @facebook_page.organization.actor
-               facebook_post.post = actor.posts.create(params[:post])
-               Rails.logger.info "[INFO] Create new FacebookPost record"
+             Rails.logger.info "[INFO] Create new FacebookPost record"
+             actor = @facebook_page.organization.actor
+             facebook_post.post = actor.posts.create(params[:post])
            elsif facebook_post.facebook_updated_at != feed_item["updated_time"]
-               facebook_post.post.update_attributes(title: params[:post][:title], caption: params[:post][:caption], medias_attributes: params[:post][:medias_attributes])
-               facebook_post.post
-               Rails.logger.info "[INFO] Update existing FacebookPost record"
+             Rails.logger.info "[INFO] Update existing FacebookPost record"
+             facebook_post.post.update_attributes(title: params[:post][:title], caption: params[:post][:caption], medias_attributes: params[:post][:medias_attributes])
+             facebook_post.post
            end
     actor = facebook_service_actor
     post.update_attributes(contributor_id: actor.id)

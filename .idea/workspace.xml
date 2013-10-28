@@ -180,7 +180,7 @@
       <file leaf-file-name="facebook_service.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/facebook_service.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="19" selection-start="682" selection-end="682" vertical-scroll-proportion="0.29577464">
+            <state line="75" column="13" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.6103286">
               <folding />
             </state>
           </provider>
@@ -1315,7 +1315,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/facebook_service.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="19" selection-start="682" selection-end="682" vertical-scroll-proportion="0.29577464">
+        <state line="75" column="13" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.6103286">
           <folding />
         </state>
       </provider>
