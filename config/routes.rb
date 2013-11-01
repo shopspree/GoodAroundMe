@@ -2,7 +2,7 @@ Goodaroundme::Application.routes.draw do
 
   # devise
   devise_for :users, constraints: { format: :html }
-  devise_for :users, controllers: { sessions: "api/v1/sessions", registrations: "api/v1/registrations" }, constraints: { format: :json}
+  devise_for :users, controllers: { sessions: "api/v1/sessions", registrations: "api/v1/registrations", passwords: "api/v1/passwords" }, constraints: { format: :json}
 
   # (web front)
   resources :organizations

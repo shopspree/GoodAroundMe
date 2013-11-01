@@ -36,15 +36,18 @@ Goodaroundme::Application.configure do
   config.assets.debug = true
 
   # Devise
-  #config.action_mailer.default_url_options = { :host => 'localhost:3000' } #TODO!!!
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      :address        => 'smtp.office365.com',
+      :address        => 'smtp.live.com',
       :port           => '587',
       :authentication => :login,
-      :user_name      => ENV['SMTP_USERNAME'],
-      :password       => ENV['SMTP_PASSWORD'],
+      :user_name      => 'support@goodaround.me',#ENV['SMTP_USERNAME'],
+      :password       => 'Dogood2betrue',#ENV['SMTP_PASSWORD'],
       :domain         => 'goodaround.me',
-      :enable_starttls_auto => true
+      :enable_starttls_auto => true,
+      :openssl_verify_mode => 'none'
   }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
 end

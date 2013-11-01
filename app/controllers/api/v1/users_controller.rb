@@ -39,8 +39,24 @@ class Api::V1::UsersController < Api::V1::BaseController
     params.required(:user).permit(:current_password, :password, :password_confirmation)
   end
 
+  def recover_password
+    @user = User.send_reset_password_instructions(params[:user])
+    if successfully_sent?(@user)
+      head :status => 200
+    else
+      render :status => 422, :json => { :errors => @user.errors.full_messages }
+    end
+  end
+
 
   protected
+
+  def send_reset_password_instructions
+    user = User.find_by_email(params[:email])
+    user.send_reset_password_instructions
+    flash[:notice] = "Reset password instructions have been sent to #{user.email}."
+    redirect_to admin_user_path(user)
+  end
 
   def user_by_email(email)
     user = if current_user && current_user.email  == email
