@@ -77,4 +77,6 @@ Goodaroundme::Application.configure do
       :domain         => 'goodaround.me',
       :enable_starttls_auto => true
   }
+  config.action_mailer.perform_deliveries = true # TODO: change to false in production
+  config.action_mailer.raise_delivery_errors = true
 end

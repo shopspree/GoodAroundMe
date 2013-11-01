@@ -4,9 +4,6 @@
     <list default="true" id="ff4a395a-fb8c-4046-951f-86887f70c115" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="goodaroundme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,7 +123,7 @@
     <file path="/abouts_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382735254853" ignored="false" />
     <file path="/20131028202517_change_facebook_run_id_in_facebook_post.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382991954138" ignored="false" />
     <file path="/20131028203103_change_facebook_run_id_in_facebook_post2.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1382992443416" ignored="false" />
-    <file path="/production.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1383315093388" ignored="false" />
+    <file path="/production.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1383338798517" ignored="false" />
     <file path="/development.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1383332550517" ignored="false" />
     <file path="/passwords_controller.rb" changelist="ff4a395a-fb8c-4046-951f-86887f70c115" time="1383253083501" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -175,10 +172,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="29" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.48019803">
+            <state line="49" column="52" selection-start="1912" selection-end="2013" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -193,10 +190,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="86" selection-start="2585" selection-end="2585" vertical-scroll-proportion="0.0">
+            <state line="79" column="86" selection-start="3048" selection-end="3048" vertical-scroll-proportion="0.740099">
               <folding />
             </state>
           </provider>
@@ -261,8 +258,8 @@
         <option value="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/passwords_controller.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -1224,13 +1221,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="86" selection-start="2585" selection-end="2585" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/net/smtp.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="930" column="0" selection-start="26773" selection-end="26773" vertical-scroll-proportion="0.0">
@@ -1247,7 +1237,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="29" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.48019803">
+        <state line="49" column="52" selection-start="1912" selection-end="2013" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="86" selection-start="3048" selection-end="3048" vertical-scroll-proportion="0.740099">
           <folding />
         </state>
       </provider>

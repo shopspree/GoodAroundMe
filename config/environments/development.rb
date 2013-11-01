@@ -41,12 +41,12 @@ Goodaroundme::Application.configure do
   config.action_mailer.smtp_settings = {
       :address        => 'smtp.live.com',
       :port           => '587',
+      :openssl_verify_mode => 'none',
       :authentication => :login,
       :user_name      => 'support@goodaround.me',#ENV['SMTP_USERNAME'],
       :password       => 'Dogood2betrue',#ENV['SMTP_PASSWORD'],
       :domain         => 'goodaround.me',
-      :enable_starttls_auto => true,
-      :openssl_verify_mode => 'none'
+      :enable_starttls_auto => true
   }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
