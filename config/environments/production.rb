@@ -69,7 +69,7 @@ Goodaroundme::Application.configure do
   config.action_mailer.default_url_options = { :host => 'goodaroundme,herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      :address        => 'smtp.office365.com',
+      :address        => 'smtp.live.com',
       :port           => '587',
       :authentication => :login,
       :user_name      => ENV['SMTP_USERNAME'],
