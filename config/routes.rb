@@ -83,8 +83,8 @@ Goodaroundme::Application.routes.draw do
       # /facebook
       get 'facebook/callback'
 
-      # /metadatas
-      get 'metadatas', to: 'metadatas#index'
+      # /metadata
+      get 'metadata', to: 'metadata#index'
 
 
 

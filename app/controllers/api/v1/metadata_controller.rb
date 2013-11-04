@@ -1,6 +1,8 @@
 class Api::V1::MetadataController < Api::V1::BaseController
 
-  # GET /api/v1/metadatas.json
+  skip_authorize_resource
+
+  # GET /api/v1/metadata.json
   def index
 
     @amazon_s3_app_id = ENV["AMAZON_S3_APP_ID"]
