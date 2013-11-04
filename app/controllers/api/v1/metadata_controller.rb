@@ -11,7 +11,7 @@ class Api::V1::MetadataController < Api::V1::BaseController
     @give_enable = false
     @give_url = 'http://www.goodaround.me'
 
-    @about_url = 'http://www.goodaround.me/about'
+    @about_url = 'http://goodaroundme.herokuapp.com/about'
 
     @image_size_bytes_threshold = 100000
 
