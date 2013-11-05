@@ -4,10 +4,13 @@ class Api::V1::PasswordsController < Devise::PasswordsController
 
   # POST /resource/password
   def create
-    self.resource = resource_class.send_reset_password_instructions(resource_params)
+    @user = User.send_reset_password_instructions(resource_params)
 
-    espond_with self.resource.errors, status: :unprocessable_entity unless successfully_sent?(resource)
-
+    if successfully_sent?(@user)
+      respond_with status: :no_content
+    else
+      respond_with @user.errors, status: :unprocessable_entity
+    end
 
   end
 
