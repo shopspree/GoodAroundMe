@@ -9,7 +9,7 @@ class Api::V1::SessionsController < Devise::SessionsController
     return invalid_login_attempt unless @user
 
     if @user.nil?
-      render json: {success: false, errors: "Error with your login or password"}, status: 401
+      render json: {success: false, errors: "Error with your login or password"}, status: :unauthorized
     end
 
     if @user.valid_password?(params[:user_login][:password])
@@ -18,7 +18,7 @@ class Api::V1::SessionsController < Devise::SessionsController
 
       #render json: @user, only: [:email, :authentication_token, :current_sign_in_ip], status: :ok
     else
-      render json: {success: false, errors: "Error with your login or password"}, status: 401
+      render json: {success: false, errors: "Error with your login or password"}, status: :unauthorized
     end
   end
 
