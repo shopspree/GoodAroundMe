@@ -15,7 +15,13 @@ class Api::V1::RegistrationsController < Devise::RegistrationsController
       #return
     else
       warden.custom_failure!
-      error_message = @user.errors["email"][0] ? "Email #{@user.errors["email"][0]}" : "Password #{@user.errors["password"][0]}"
+      error_message = if @user.errors["email"][0]
+                        "Email #{@user.errors["email"][0]}"
+                      elsif @user.errors["password"][0]
+                        "Password #{@user.errors["password"][0]}"
+                      else
+                        @user.errors
+                      end
       render json: {success: false, errors: error_message}, status: :unprocessable_entity
     end
   end
