@@ -1,4 +1,4 @@
-class OrganizationsController < BaseController
+class Admin::OrganizationsController < Admin::AdminController
 
   before_filter :categories
 
@@ -12,13 +12,11 @@ class OrganizationsController < BaseController
   end
 
   # GET /organizations/1
-  # GET /organizations/1.json
   def show
     @organization = Organization.find(params[:id])
   end
 
   # GET /organizations/new
-  # GET /organizations/new.json
   def new
     @organization = Organization.new
   end
@@ -50,7 +48,6 @@ class OrganizationsController < BaseController
   end
 
   # PUT /organizations/1
-  # PUT /organizations/1.json
   def update
     @organization = Organization.find(params[:id])
 

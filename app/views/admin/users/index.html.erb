@@ -1,0 +1,35 @@
+<h1>Listing users</h1>
+
+<%= form_tag approve_admin_users_path, method: :put do %>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+  <tr>
+    <th>Email</th>
+    <th>ID</th>
+    <th>Full Name</th>
+    <th>Admin</th>
+    <th>Approved</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= link_to user.email %></td>
+    <td><%= link_to user.id %></td>
+    <td><%= link_to user.person.profile.display_name %></td>
+    <td><%= check_box_tag 'user_ids[]', user.id, user.admin?, disabled: true %></td>
+    <td><%= check_box_tag 'user_ids[]', user.id, user.approved? %></td>
+    <td><%= link_to 'Show', admin_user_path(user) %></td>
+    <td><%= link_to 'Destroy', admin_user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+<br />
+
+<%= submit_tag "Save", name: nil, class: "btn btn-primary" %>
+
+<% end %>

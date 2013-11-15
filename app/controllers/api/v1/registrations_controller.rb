@@ -11,6 +11,7 @@ class Api::V1::RegistrationsController < Devise::RegistrationsController
       profile = @user.person.profile
       profile.update_attributes(first_name: params[:user][:first_name],  last_name: params[:user][:last_name])
 
+
       #render json: @user, only: [:email, :authentication_token], status: :created, location: nil if
       #return
     else

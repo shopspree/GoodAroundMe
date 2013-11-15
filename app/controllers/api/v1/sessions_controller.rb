@@ -13,10 +13,15 @@ class Api::V1::SessionsController < Devise::SessionsController
     end
 
     if @user.valid_password?(params[:user_login][:password])
-      sign_in(:user, @user)
-      @user.reset_authentication_token!
-
-      #render json: @user, only: [:email, :authentication_token, :current_sign_in_ip], status: :ok
+      if !Settings['authentication.approval_required'] || @user.approved?
+        sign_in(:user, @user)
+        @user.reset_authentication_token!
+        #render json: @user, only: [:email, :authentication_token, :current_sign_in_ip], status: :ok
+      else
+        number_in_line = @user.waiting_list.number_in_line if @user.waiting_list
+        message = "You have not been approved yet. You are number #{number_in_line} in line. We will notify you via email once you are approved."
+        render json: {success: false, errors: "You are not approved yet", data: {number_in_line: number_in_line}}, message: message, status: :forbidden
+      end
     else
       render json: {success: false, errors: "Error with your login or password"}, status: :unauthorized
     end

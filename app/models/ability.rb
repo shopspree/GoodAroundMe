@@ -62,7 +62,7 @@ class Ability
       can :destroy, Like, actor_id: actor.id  # can destroy like they own
 
       # Inappropriate
-      can :create,  InappropriateReport # anyone can report inappropriate
+      can :create, InappropriateReport # anyone can report inappropriate
 
       # Notification
       can [:read, :acknowledge],  Notification, actor_id: actor.id # can read self profile notification
@@ -85,6 +85,9 @@ class Ability
 
       # Problem
       can [:create], Problem # anyone can report a problem
+
+      # WaitingList
+      can [:read, :create], WaitingList # anyone can report a problem
 
       # Mention
       #can [:create, :read], Mention do |mention|

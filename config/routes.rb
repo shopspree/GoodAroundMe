@@ -1,11 +1,20 @@
 Goodaroundme::Application.routes.draw do
 
   # devise
-  devise_for :users, constraints: { format: :html }
+  devise_for :users, controllers: { passwords: "passwords" }, constraints: { format: :html }
   devise_for :users, controllers: { sessions: "api/v1/sessions", registrations: "api/v1/registrations", passwords: "api/v1/passwords" }, constraints: { format: :json}
 
-  # (web front)
-  resources :organizations
+  # /admin/*
+  namespace :admin do
+
+    resources :organizations, constraints: { format: :html }
+    resources :users, only: [:index, :show, :destroy] do
+      put 'approve', on: :collection
+      put 'wait_listing', on: :collection
+    end
+
+  end
+
 
   get 'about', to: 'abouts#index'
 
@@ -86,7 +95,10 @@ Goodaroundme::Application.routes.draw do
       # /metadata
       get 'metadata', to: 'metadata#index'
 
-
+      # /waiting_list
+      resources :waiting_lists, only: [:create]
+      get 'waiting_lists/:email', to: 'waiting_lists#show', constraints: { email: /.*(?=\.json)/ }
+      delete 'waiting_lists/:email', to: 'waiting_lists#destroy', constraints: { email: /.*(?=\.json)/ }
 
     end
   end

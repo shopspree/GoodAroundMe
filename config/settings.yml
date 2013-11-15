@@ -1,5 +1,11 @@
 # config/settings.yml
 
+# general
+application.name: 'Good Around Me'
+
+# authentication
+authentication.approval_required: true
+
 # context
 context.global.name: 'GLOBAL'
 context.global: true

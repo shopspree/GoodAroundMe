@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131028202517) do
+ActiveRecord::Schema.define(:version => 20131107232323) do
 
   create_table "activities", :force => true do |t|
     t.integer  "context_id"
@@ -395,6 +395,8 @@ ActiveRecord::Schema.define(:version => 20131028202517) do
     t.string   "unconfirmed_email"
     t.string   "authentication_token"
     t.boolean  "admin",                  :default => false
+    t.boolean  "approved",               :default => false
+    t.integer  "approver_id"
   end
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true
@@ -408,5 +410,15 @@ ActiveRecord::Schema.define(:version => 20131028202517) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "waiting_lists", :force => true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "rank"
+  end
+
+  add_index "waiting_lists", ["rank"], :name => "index_waiting_lists_on_rank"
+  add_index "waiting_lists", ["user_id"], :name => "index_waiting_lists_on_user_id"
 
 end
