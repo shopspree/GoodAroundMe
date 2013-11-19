@@ -4,7 +4,7 @@
 application.name: 'Good Around Me'
 
 # authentication
-authentication.approval_required: true
+authentication.approval_required: false
 
 # context
 context.global.name: 'GLOBAL'
