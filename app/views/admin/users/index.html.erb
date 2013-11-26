@@ -20,7 +20,7 @@
     <td><%= link_to user.id %></td>
     <td><%= link_to user.person.profile.display_name %></td>
     <td><%= check_box_tag 'user_ids[]', user.id, user.admin?, disabled: true %></td>
-    <td><%= check_box_tag 'user_ids[]', user.id, user.approved? %></td>
+    <td><%= check_box_tag 'user_ids[]', user.id, user.approved?, onclick: "approve();" %></td>
     <td><%= link_to 'Show', admin_user_path(user) %></td>
     <td><%= link_to 'Destroy', admin_user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
