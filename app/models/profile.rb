@@ -6,7 +6,7 @@ class Profile < ActiveRecord::Base
 
   validates :person_id, presence: true
 
-  before_save :populate_display_name
+  before_save :default_values
 
   scope :search, lambda { |keyword| where('lower(full_name) LIKE ?', "%#{keyword.downcase}%").order(:full_name) }
   scope :search_exact, lambda { |keyword| where(full_name: keyword).order(:full_name) }
@@ -26,10 +26,14 @@ class Profile < ActiveRecord::Base
     read_attribute(:last_name).try(:titleize)
   end
 
+  def display_name
+    "#{first_name} #{last_name}"
+  end
+
 
   protected
 
-  def populate_display_name
+  def default_values
     self.display_name ||= "#{first_name} #{last_name}"
   end
 
