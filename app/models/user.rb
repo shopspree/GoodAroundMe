@@ -31,9 +31,9 @@ class User < ActiveRecord::Base
     self.waiting_list.destroy if self.waiting_list
   end
 
-  def wait_listing
+  def wait_listing(rank= nil)
     unless (self.approved?)
-      self.build_waitingList(rank: params[:rank])
+      self.build_waiting_list(rank: rank)
     end
   end
 
