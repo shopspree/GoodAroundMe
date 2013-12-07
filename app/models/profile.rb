@@ -34,7 +34,7 @@ class Profile < ActiveRecord::Base
   protected
 
   def default_values
-    self.display_name ||= "#{first_name} #{last_name}"
+    self.display_name ||= "#{self.first_name} #{self.last_name}"
   end
 
 end
